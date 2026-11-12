@@ -22,8 +22,8 @@ from torch.utils.data import DataLoader
 import torchvision
 from torchvision.models import resnet18
 
-from dataset import PlantDiseaseDataset, dataset_root, is_included, load_manifest, make_transforms, result_root
-from evaluate import majority_prediction, scores, write_rows
+from .dataset import PlantDiseaseDataset, dataset_root, is_included, load_manifest, make_transforms, result_root
+from .evaluate import majority_prediction, scores, write_rows
 
 
 SEED = 42

@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from dataset import dataset_root, is_included, load_manifest, result_root
+from ..dataset import dataset_root, is_included, load_manifest, result_root
 
 
 def phash(path: Path, cosine: np.ndarray) -> int:

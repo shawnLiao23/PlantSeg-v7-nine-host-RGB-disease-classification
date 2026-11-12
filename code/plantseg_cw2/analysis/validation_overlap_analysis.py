@@ -15,9 +15,9 @@ from pathlib import Path
 import torch
 from torchvision.models import resnet18
 
-from dataset import dataset_root, load_manifest, result_root
-from evaluate import predict_model, scores
-from train import WEIGHTS_ID, device
+from ..dataset import dataset_root, load_manifest, result_root
+from ..evaluate import predict_model, scores
+from ..train import WEIGHTS_ID, device
 
 
 def read_rows(path: Path) -> list[dict]:

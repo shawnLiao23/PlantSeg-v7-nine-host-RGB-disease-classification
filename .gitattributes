@@ -1,0 +1,17 @@
+* text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.ipynb text eol=lf
+*.toml text eol=lf
+*.png binary
+*.pdf binary
+
+# Frozen experiment plans hash the exact bytes of generated records.
+result/*.csv -text -eol whitespace=cr-at-eol
+result/*.json -text -eol whitespace=cr-at-eol
+result/**/*.csv -text -eol whitespace=cr-at-eol
+result/**/*.json -text -eol whitespace=cr-at-eol

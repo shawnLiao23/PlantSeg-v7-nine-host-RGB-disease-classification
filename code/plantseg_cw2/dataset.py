@@ -12,13 +12,14 @@ from torch.utils.data import Dataset
 from torchvision import transforms
 from torchvision.models import ResNet18_Weights
 
+from .paths import PROJECT_ROOT
+
 
 HOSTS = (
     "apple", "banana", "citrus", "corn", "potato",
     "soybean", "tomato", "wheat", "zucchini",
 )
 SPLIT_NAMES = {"Training": "train", "Validation": "val", "Test": "test"}
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_COLUMNS = (
     "image_id", "image_path", "host", "disease", "class_name", "class_id",
     "split", "source_index", "annotation_path", "reported_resolution", "metadata_row", "sha256",

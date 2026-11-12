@@ -10,8 +10,8 @@ from PIL import Image
 import torch
 from torchvision.models import resnet18
 
-from dataset import make_transforms, result_root
-from train import device
+from .dataset import make_transforms, result_root
+from .train import device
 
 
 def predict(image_path: str | Path, checkpoint_path: str | Path | None = None,

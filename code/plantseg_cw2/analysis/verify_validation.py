@@ -5,10 +5,10 @@ from __future__ import annotations
 import csv
 import json
 
-from dataset import dataset_root, load_manifest, result_root
-from evaluate import predict_model
-from run_experiments import _load_model
-from train import device
+from ..dataset import dataset_root, load_manifest, result_root
+from ..evaluate import predict_model
+from ..run_experiments import _load_model
+from ..train import device
 
 
 def main() -> None:

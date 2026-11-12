@@ -13,7 +13,7 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-from dataset import PlantDiseaseDataset, dataset_root, load_manifest, make_transforms, result_root
+from .dataset import PlantDiseaseDataset, dataset_root, load_manifest, make_transforms, result_root
 
 
 def scores(y_true, y_pred, class_count: int) -> dict:
@@ -47,7 +47,7 @@ def scores(y_true, y_pred, class_count: int) -> dict:
 
 
 def majority_prediction(manifest: list[dict], split: str, class_count: int):
-    from dataset import is_included
+    from .dataset import is_included
     training = [r for r in manifest if r["split"] == "train" and is_included(r)]
     target = [r for r in manifest if r["split"] == split and is_included(r)]
     counts = np.bincount([r["class_id"] for r in training], minlength=class_count)

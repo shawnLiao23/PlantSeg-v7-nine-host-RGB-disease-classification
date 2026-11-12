@@ -6,8 +6,8 @@ import csv
 
 import torch
 
-from dataset import PlantDiseaseDataset, dataset_root, is_included, load_manifest, make_transforms, result_root
-from train import device, extract_features, make_feature_extractor
+from ..dataset import PlantDiseaseDataset, dataset_root, is_included, load_manifest, make_transforms, result_root
+from ..train import device, extract_features, make_feature_extractor
 
 
 def scan(threshold: float = 0.985) -> list[dict]:

@@ -19,9 +19,9 @@ from torch import nn
 from torch.utils.data import DataLoader
 from torchvision.models import resnet18
 
-from dataset import PlantDiseaseDataset, dataset_root, load_manifest, make_transforms, result_root
-from evaluate import scores
-from train import BATCH_SIZE, SEED, WEIGHTS_ID, device, seed_everything
+from ..dataset import PlantDiseaseDataset, dataset_root, load_manifest, make_transforms, result_root
+from ..evaluate import scores
+from ..train import BATCH_SIZE, SEED, WEIGHTS_ID, device, seed_everything
 
 
 def digest(path: Path) -> str:

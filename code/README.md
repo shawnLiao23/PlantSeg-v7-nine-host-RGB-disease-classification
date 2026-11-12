@@ -1,6 +1,6 @@
 # AIP304 Coursework 2 - Option 1
 
-This project classifies RGB photographs into host-disease classes for the nine specified PlantSeg hosts. The submitted notebook is `AIP304_CW2_Option1.ipynb`; the Python files in this directory hold the same audit, training, evaluation, plotting, and inference code used by the notebook. Run the notebook from top to bottom for the full coursework workflow.
+This project classifies RGB photographs into host-disease classes for the nine specified PlantSeg hosts. The notebook is `AIP304_CW2_Option1.ipynb`; the installable `plantseg_cw2` package holds the audit, training, evaluation, plotting, and inference code used by the notebook. The `analysis` subpackage contains supplementary experiments and diagnostics.
 
 ## Dataset and paths
 
@@ -11,6 +11,9 @@ coursework2/
   plantseg/plantseg/Metadata.csv
   plantseg/plantseg/images/{train,val,test}/
   code/AIP304_CW2_Option1.ipynb
+  code/plantseg_cw2/{dataset,train,evaluate,run_experiments,...}.py
+  code/plantseg_cw2/analysis/
+  docs/
   result/
 ```
 
@@ -22,21 +25,21 @@ The fixed local manifest includes all 4,349 nine-host images in 43 classes under
 
 ## Dependencies
 
-Use Python with PyTorch, torchvision, Pillow, NumPy, Matplotlib, and Jupyter. Install the versions in `requirements.txt` when preparing a fresh environment. The full run is practical on a CUDA GPU; CPU execution is supported but much slower. The notebook records detected software, GPU, and runtime information rather than assuming a specific machine.
+Use Python with PyTorch, torchvision, Pillow, NumPy, Matplotlib, and Jupyter. From the project root, run `python -m pip install -r code/requirements.txt` and `python -m pip install . --no-deps` to install the package and command-line entry points. A regular install has been checked with this project's Chinese Windows path. For source edits without reinstalling, set `PYTHONPATH` to the absolute `code` directory before using `python -m plantseg_cw2...`. If running from outside the repository, set `CW2_PROJECT_ROOT` to its absolute path. The notebook embeds its required package source and adds `code` to `sys.path` automatically. The full run is practical on a CUDA GPU; CPU execution is supported but much slower.
 
 ## Run the project
 
 In the notebook, set `MODE = "full"` to audit, train, validate, freeze the model choice, run the final test, and regenerate figures. Run the cells sequentially. `MODE = "demo"` loads existing outputs and a checkpoint for a short inference demonstration without training again.
 
-The command-line stages provide the same workflow when run from the project root:
+The command-line stages provide the same workflow when run from the project root after the package is installed or `PYTHONPATH` is set:
 
 ```powershell
-python code/run_experiments.py --audit
-python code/run_experiments.py --train
-python code/run_experiments.py --final-test
-python code/sensitivity_analysis.py
-python code/run_experiments.py --plots
-python code/build_report.py --student "[Name]" --student-id "[ID]" --contributions "[Actual contributions]"
+python -m plantseg_cw2.run_experiments --audit
+python -m plantseg_cw2.run_experiments --train
+python -m plantseg_cw2.run_experiments --final-test
+python -m plantseg_cw2.analysis.sensitivity_analysis
+python -m plantseg_cw2.run_experiments --plots
+python -m plantseg_cw2.build_report --student "[Name]" --student-id "[ID]" --contributions "[Actual contributions]"
 ```
 
 `--final-test` is a separate stage. Training writes `result/frozen_plan.json` after model selection by validation macro-F1. Once final test results exist, the runner refuses to train or tune again against them. Running `--plots` and `build_report.py` only regenerates figures and the PDF from saved results.
@@ -56,12 +59,12 @@ The checkpoint was frozen in `result/exploratory_finetune/frozen_extension_plan.
 The reproducible supplementary commands, run after the original experiment, are:
 
 ```powershell
-python code/explore_finetune.py --epochs 10 --patience 4
-python code/explore_finetune.py --continue-from-best-pilot --epochs 15 --patience 5
-python code/validation_overlap_analysis.py
-python code/evaluate_extension.py --freeze
-python code/evaluate_extension.py --test
-python code/compare_extension.py
+python -m plantseg_cw2.analysis.explore_finetune --epochs 10 --patience 4
+python -m plantseg_cw2.analysis.explore_finetune --continue-from-best-pilot --epochs 15 --patience 5
+python -m plantseg_cw2.analysis.validation_overlap_analysis
+python -m plantseg_cw2.analysis.evaluate_extension --freeze
+python -m plantseg_cw2.analysis.evaluate_extension --test
+python -m plantseg_cw2.analysis.compare_extension
 ```
 
 The freeze and test commands intentionally refuse a second run in the same result directory. To reproduce from scratch, use a separate result directory and perform the original audit and training there first.
@@ -86,7 +89,9 @@ result/checkpoints/                 best-validation CNN checkpoints
 result/AIP304_CW2_Report.pdf        concise report, at most five pages
 ```
 
-The notebook regenerates the report's data-derived tables and figures from these files. Large inline image outputs are removed from the saved notebook; the figures remain in `result/figures/` and are displayed when its cells run. The PDF is built by `build_report.py`, which refuses to create a report without the recorded manifest, audit, validation summary, and final test metrics. Fill in student names, identifiers, and actual team contributions before submission. The accompanying `video_script.md` is a recording guide; a real video with the presenter visible is still required.
+The notebook regenerates the report's data-derived tables and figures from these files. Large inline image outputs are removed from the saved notebook; the figures remain in `result/figures/` and are displayed when its cells run. The PDF is built by `plantseg_cw2.build_report`, which refuses to create a report without the recorded manifest, audit, validation summary, and final test metrics. Fill in student names, identifiers, and actual team contributions before submission. The recording guide is `docs/video_script.md`; a real video with the presenter visible is still required.
+
+The repository contains saved result tables but omits raw data and model checkpoints. A fresh clone can inspect the saved outputs. To execute inference, use locally regenerated checkpoints. To rerun the full experiment without overwriting the archived results, set `CW2_RESULT_DIR` to a new directory such as `result_local` and place a copy of `result/tables/near_duplicate_review.csv` at `result_local/tables/near_duplicate_review.csv` before auditing. This preserves the documented visual review decisions.
 
 ## Sources
 

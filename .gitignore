@@ -2,6 +2,12 @@
 /plantseg/
 /plantseg.zip
 /code/.venv/
+/.venv/
+*.egg-info/
+/build/
+/dist/
+/result_local/
+/code/.jupyter_runtime/
 **/__pycache__/
 **/.ipynb_checkpoints/
 *.py[cod]

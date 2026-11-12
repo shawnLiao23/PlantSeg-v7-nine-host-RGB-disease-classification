@@ -8,7 +8,7 @@ import zlib
 import zipfile
 from pathlib import Path, PurePosixPath
 
-from dataset import PROJECT_ROOT, dataset_root, result_root
+from ..dataset import PROJECT_ROOT, dataset_root, result_root
 
 
 OFFICIAL_V7_MD5 = "9358a66dff88cdd15c4fe009763c40a3"
@@ -60,8 +60,12 @@ def verify(archive: Path | None = None, extracted: Path | None = None) -> dict:
             size_mismatch.append(name)
         elif file_crc32(path) != crc:
             crc_mismatch.append(name)
+    try:
+        archive_label = archive.resolve().relative_to(PROJECT_ROOT).as_posix()
+    except ValueError:
+        archive_label = str(archive.resolve())
     report = {
-        "archive": str(archive.resolve()),
+        "archive": archive_label,
         "archive_bytes": archive.stat().st_size,
         "archive_md5": md5,
         "official_v7_md5": OFFICIAL_V7_MD5,

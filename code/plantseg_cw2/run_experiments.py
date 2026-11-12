@@ -15,10 +15,10 @@ import numpy as np
 import torch
 from torchvision.models import resnet18
 
-from audit_dataset import audit_dataset
-from dataset import dataset_root, is_included, load_manifest, result_root
-from evaluate import majority_prediction, make_final_plots, predict_model, write_rows
-from train import WEIGHTS_ID, train_experiments, device
+from .audit_dataset import audit_dataset
+from .dataset import dataset_root, is_included, load_manifest, result_root
+from .evaluate import majority_prediction, make_final_plots, predict_model, write_rows
+from .train import WEIGHTS_ID, train_experiments, device
 
 
 def _load_model(checkpoint_path: Path, mapping: dict, summary_row: dict,

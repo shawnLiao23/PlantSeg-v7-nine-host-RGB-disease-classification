@@ -18,7 +18,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from dataset import result_root
+from ..dataset import result_root
 
 
 def sha(path: Path) -> str:

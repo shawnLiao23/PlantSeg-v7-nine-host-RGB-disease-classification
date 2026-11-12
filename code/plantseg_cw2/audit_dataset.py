@@ -13,7 +13,8 @@ from pathlib import Path, PurePosixPath
 
 from PIL import Image
 
-from dataset import HOSTS, build_manifest, dataset_root, is_included, result_root, write_manifest
+from .dataset import HOSTS, build_manifest, dataset_root, is_included, result_root, write_manifest
+from .paths import PROJECT_ROOT
 
 
 def sha256_file(path: Path) -> str:
@@ -517,8 +518,7 @@ def audit_dataset(
     }
     train_counts = [item["used_train"] for item in counts]
     info = json.loads((source / "annotation_train.json").read_text(encoding="utf-8"))["info"]
-    project_root = Path(__file__).resolve().parents[1]
-    archive = next((path for path in (project_root / "plantseg.zip",
+    archive = next((path for path in (PROJECT_ROOT / "plantseg.zip",
                source.parent / "plantseg.zip") if path.is_file()), None)
     archive_md5 = md5_file(archive) if archive else None
     official_md5 = "9358a66dff88cdd15c4fe009763c40a3"

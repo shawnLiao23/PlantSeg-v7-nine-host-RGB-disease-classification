@@ -21,8 +21,10 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
+from .paths import PROJECT_ROOT
 
-ROOT = Path(__file__).resolve().parents[1]
+
+ROOT = PROJECT_ROOT
 RESULT = ROOT / "result"
 NAVY = "#163451"
 TEAL = "#157a75"

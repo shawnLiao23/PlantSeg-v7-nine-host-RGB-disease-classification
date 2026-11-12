@@ -15,10 +15,10 @@ from pathlib import Path
 import torch
 from torchvision.models import resnet18
 
-from dataset import dataset_root, load_manifest, result_root
-from evaluate import predict_model, scores, write_rows
-from sensitivity_analysis import read_csv
-from train import WEIGHTS_ID, device
+from ..dataset import dataset_root, load_manifest, result_root
+from ..evaluate import predict_model, scores, write_rows
+from .sensitivity_analysis import read_csv
+from ..train import WEIGHTS_ID, device
 
 
 def sha(path: Path) -> str:
