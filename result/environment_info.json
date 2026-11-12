@@ -1,0 +1,11 @@
+{
+  "python": "3.11.9",
+  "torch": "2.5.1+cu121",
+  "torchvision": "0.20.1+cu121",
+  "cuda_available": true,
+  "torch_cuda_runtime": "12.1",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_vram_bytes": 8585216000,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "ram_bytes": 16335966208
+}

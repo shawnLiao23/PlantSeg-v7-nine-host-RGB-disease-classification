@@ -1,0 +1,88 @@
+{
+  "top_confusions": [
+    {
+      "true_class": "tomato | tomato early blight",
+      "predicted_class": "tomato | tomato septoria leaf spot",
+      "count": 10
+    },
+    {
+      "true_class": "banana | banana black leaf streak",
+      "predicted_class": "banana | banana cordana leaf spot",
+      "count": 8
+    },
+    {
+      "true_class": "tomato | tomato bacterial leaf spot",
+      "predicted_class": "tomato | tomato septoria leaf spot",
+      "count": 6
+    },
+    {
+      "true_class": "tomato | tomato yellow leaf curl virus",
+      "predicted_class": "tomato | tomato mosaic virus",
+      "count": 6
+    },
+    {
+      "true_class": "wheat | wheat bacterial leaf streak (black chaff)",
+      "predicted_class": "wheat | wheat head scab",
+      "count": 6
+    },
+    {
+      "true_class": "apple | apple scab",
+      "predicted_class": "apple | apple rust",
+      "count": 5
+    },
+    {
+      "true_class": "corn | corn gray leaf spot",
+      "predicted_class": "corn | corn northern leaf blight",
+      "count": 5
+    },
+    {
+      "true_class": "wheat | wheat bacterial leaf streak (black chaff)",
+      "predicted_class": "wheat | wheat stripe rust",
+      "count": 5
+    },
+    {
+      "true_class": "soybean | soybean frog eye leaf spot",
+      "predicted_class": "soybean | soybean rust",
+      "count": 4
+    },
+    {
+      "true_class": "tomato | tomato early blight",
+      "predicted_class": "potato | potato early blight",
+      "count": 4
+    },
+    {
+      "true_class": "tomato | tomato early blight",
+      "predicted_class": "tomato | tomato late blight",
+      "count": 4
+    },
+    {
+      "true_class": "corn | corn rust",
+      "predicted_class": "corn | corn northern leaf blight",
+      "count": 3
+    },
+    {
+      "true_class": "potato | potato late blight",
+      "predicted_class": "potato | potato early blight",
+      "count": 3
+    },
+    {
+      "true_class": "potato | potato late blight",
+      "predicted_class": "tomato | tomato leaf mold",
+      "count": 3
+    },
+    {
+      "true_class": "soybean | soybean bacterial blight",
+      "predicted_class": "soybean | soybean brown spot",
+      "count": 3
+    }
+  ],
+  "error_count": 287,
+  "note": "Confusions are observations; symptom-level causes require visual inspection.",
+  "inspected_example": {
+    "image_id": "tomato_early_blight_google_0267.jpg",
+    "true_class": "tomato | tomato early blight",
+    "predicted_class": "potato | potato early blight",
+    "softmax_score": 0.9553943872451782,
+    "observation": "An inspected tomato early-blight close-up has little visible host context and was predicted as potato early blight. This may contribute to the cross-host confusion, but it does not establish the cause."
+  }
+}

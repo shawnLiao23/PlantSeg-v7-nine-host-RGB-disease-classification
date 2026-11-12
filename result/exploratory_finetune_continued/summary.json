@@ -1,0 +1,17 @@
+{
+  "status": "post-final validation-only exploration; do not use for frozen final test",
+  "stage": "continued from best pilot with freshly initialized Adam optimizer",
+  "baseline_validation_macro_f1": 0.6246034943302331,
+  "initial_validation_macro_f1": 0.663816203045368,
+  "best_epoch": 0,
+  "best_validation": {
+    "macro_f1": 0.663816203045368,
+    "accuracy": 0.7073684210526315,
+    "balanced_accuracy": 0.6670221557308462
+  },
+  "epochs_run": 5,
+  "training_time_sec": 276.33273880000024,
+  "checkpoint": null,
+  "best_available_checkpoint": "exploratory_finetune/best_validation.pth",
+  "test_evaluated": false
+}

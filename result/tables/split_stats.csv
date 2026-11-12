@@ -1,0 +1,5 @@
+split,raw_images,used_images,excluded_images,class_count
+train,3007,3007,0,43
+val,475,475,0,43
+test,867,867,0,43
+total,4349,4349,0,43

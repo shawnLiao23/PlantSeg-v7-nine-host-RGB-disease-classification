@@ -1,0 +1,4174 @@
+{
+  "dataset_release": "PlantSeg v7 verified",
+  "version_note": "Local plantseg.zip matches the official v7 MD5; every extracted file matches the archive's size and CRC.",
+  "official_v7_record": "https://zenodo.org/records/17719108",
+  "official_v7_archive_md5": "9358a66dff88cdd15c4fe009763c40a3",
+  "local_archive_present": true,
+  "local_archive_bytes": 1057281724,
+  "local_archive_md5": "9358a66dff88cdd15c4fe009763c40a3",
+  "archive_extraction_check": {
+    "archive_file_count": 15552,
+    "archive_uncompressed_bytes": 1134343284,
+    "missing_count": 0,
+    "size_mismatch_count": 0,
+    "crc_mismatch_count": 0,
+    "extra_extracted_count": 0,
+    "matches_extraction": true,
+    "verification_source": "full size/CRC scan in source_archive_verification.json"
+  },
+  "source": {
+    "images": {
+      "train": 5367,
+      "val": 846,
+      "test": 1561
+    },
+    "annotations": {
+      "train": 5367,
+      "val": 846,
+      "test": 1561
+    },
+    "all_files": 15552,
+    "all_bytes": 1134343284,
+    "metadata_rows": 7774,
+    "metadata_missing_images": 0
+  },
+  "nine_hosts": [
+    "apple",
+    "banana",
+    "citrus",
+    "corn",
+    "potato",
+    "soybean",
+    "tomato",
+    "wheat",
+    "zucchini"
+  ],
+  "raw_images": 4349,
+  "used_images": 4349,
+  "classes": 43,
+  "split_counts": {
+    "train": {
+      "raw": 3007,
+      "used": 3007
+    },
+    "val": {
+      "raw": 475,
+      "used": 475
+    },
+    "test": {
+      "raw": 867,
+      "used": 867
+    }
+  },
+  "missing_or_corrupt_images": [],
+  "missing_masks": [],
+  "resolution_mismatches": [],
+  "exact_duplicate_groups": [
+    {
+      "sha256": "4ac3d5b8364c8b618b4ba77ddfdbdce826605d191bb634e15dca742c528147bf",
+      "members": [
+        {
+          "image_id": "apple_rust_162.jpg",
+          "split": "train",
+          "class_name": "apple | apple rust"
+        },
+        {
+          "image_id": "apple_scab_76.jpg",
+          "split": "train",
+          "class_name": "apple | apple scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "apple_rust_162.jpg",
+        "apple_scab_76.jpg"
+      ]
+    },
+    {
+      "sha256": "1212a5376a2412bd53bb969cc1b4476b0a93663cc0fae4791133681e10acab70",
+      "members": [
+        {
+          "image_id": "apple_rust_78.jpg",
+          "split": "train",
+          "class_name": "apple | apple rust"
+        },
+        {
+          "image_id": "apple_scab_65.jpg",
+          "split": "train",
+          "class_name": "apple | apple scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "apple_rust_78.jpg",
+        "apple_scab_65.jpg"
+      ]
+    },
+    {
+      "sha256": "7d62cf4dc932813ae6cc950b42541e2b0a5ed239fa95c3819f6837bf78b708d3",
+      "members": [
+        {
+          "image_id": "banana_anthracnose_Bing_0023.jpg",
+          "split": "train",
+          "class_name": "banana | banana anthracnose"
+        },
+        {
+          "image_id": "banana_anthracnose_Bing_0075.jpg",
+          "split": "train",
+          "class_name": "banana | banana anthracnose"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_anthracnose_Bing_0023.jpg",
+        "banana_anthracnose_Bing_0075.jpg"
+      ]
+    },
+    {
+      "sha256": "6024dec6ce5795b100457faa790f19c27b0ba1d35b69ac0f28cfd24a752ccc3f",
+      "members": [
+        {
+          "image_id": "banana_anthracnose_Bing_0065.jpg",
+          "split": "train",
+          "class_name": "banana | banana anthracnose"
+        },
+        {
+          "image_id": "banana_anthracnose_Bing_0300.jpg",
+          "split": "train",
+          "class_name": "banana | banana anthracnose"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_anthracnose_Bing_0065.jpg",
+        "banana_anthracnose_Bing_0300.jpg"
+      ]
+    },
+    {
+      "sha256": "81af2d459d31fc83b6a4ad749c44423d6effe98e73d5e09f0b4e0ad82b646070",
+      "members": [
+        {
+          "image_id": "banana_black_leaf_streak_Bing_0005.jpg",
+          "split": "train",
+          "class_name": "banana | banana black leaf streak"
+        },
+        {
+          "image_id": "banana_black_leaf_streak_banana black sigatoka (30).jpg",
+          "split": "train",
+          "class_name": "banana | banana black leaf streak"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_black_leaf_streak_Bing_0005.jpg",
+        "banana_black_leaf_streak_banana black sigatoka (30).jpg"
+      ]
+    },
+    {
+      "sha256": "9f744664e14d44e886e15aa0d4f109262cf2b97063d5c42a2e576ec0a279a882",
+      "members": [
+        {
+          "image_id": "banana_black_leaf_streak_Bing_0026.jpg",
+          "split": "train",
+          "class_name": "banana | banana black leaf streak"
+        },
+        {
+          "image_id": "banana_black_leaf_streak_banana black sigatoka (52).jpg",
+          "split": "train",
+          "class_name": "banana | banana black leaf streak"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_black_leaf_streak_Bing_0026.jpg",
+        "banana_black_leaf_streak_banana black sigatoka (52).jpg"
+      ]
+    },
+    {
+      "sha256": "ecb15f7fafbed7213e30cbfa1a39554c2186f69edc195bfc56d30328e9e5aa04",
+      "members": [
+        {
+          "image_id": "banana_black_leaf_streak_Bing_0046.jpg",
+          "split": "train",
+          "class_name": "banana | banana black leaf streak"
+        },
+        {
+          "image_id": "banana_black_leaf_streak_banana black sigatoka (7).jpg",
+          "split": "val",
+          "class_name": "banana | banana black leaf streak"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_black_leaf_streak_Bing_0046.jpg",
+        "banana_black_leaf_streak_banana black sigatoka (7).jpg"
+      ]
+    },
+    {
+      "sha256": "d24499e36f9b4ae26ce2ef8de4282702959083e8713b51c952c1516abe15c30f",
+      "members": [
+        {
+          "image_id": "banana_black_leaf_streak_Bing_0056.jpg",
+          "split": "train",
+          "class_name": "banana | banana black leaf streak"
+        },
+        {
+          "image_id": "banana_black_leaf_streak_banana black sigatoka (9).jpg",
+          "split": "train",
+          "class_name": "banana | banana black leaf streak"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_black_leaf_streak_Bing_0056.jpg",
+        "banana_black_leaf_streak_banana black sigatoka (9).jpg"
+      ]
+    },
+    {
+      "sha256": "cbc21f7f7a5dfd89e09b8aa515c08302576df82a5dcd6ca4fae52ca0b0052ace",
+      "members": [
+        {
+          "image_id": "banana_black_leaf_streak_Bing_0165.jpg",
+          "split": "val",
+          "class_name": "banana | banana black leaf streak"
+        },
+        {
+          "image_id": "banana_cordana_leaf_spot_Bing_0097.jpg",
+          "split": "val",
+          "class_name": "banana | banana cordana leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "banana_black_leaf_streak_Bing_0165.jpg",
+        "banana_cordana_leaf_spot_Bing_0097.jpg"
+      ]
+    },
+    {
+      "sha256": "bc7243e2f445950b9b9cfb7dccdbd53bb8378c166ed9fe95386ca0cff24afaab",
+      "members": [
+        {
+          "image_id": "banana_bunchy_top_Bing_0026.jpg",
+          "split": "train",
+          "class_name": "banana | banana bunchy top"
+        },
+        {
+          "image_id": "banana_bunchy_top_Bing_0247.jpg",
+          "split": "train",
+          "class_name": "banana | banana bunchy top"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_bunchy_top_Bing_0026.jpg",
+        "banana_bunchy_top_Bing_0247.jpg"
+      ]
+    },
+    {
+      "sha256": "03dd0c5dbbc151249e19ace5d6bd0cf8913192f526aecaf07b1fad020d9972ed",
+      "members": [
+        {
+          "image_id": "banana_bunchy_top_Bing_0045.jpg",
+          "split": "train",
+          "class_name": "banana | banana bunchy top"
+        },
+        {
+          "image_id": "banana_bunchy_top_Google_0031.jpg",
+          "split": "train",
+          "class_name": "banana | banana bunchy top"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_bunchy_top_Bing_0045.jpg",
+        "banana_bunchy_top_Google_0031.jpg"
+      ]
+    },
+    {
+      "sha256": "dd946c3d0f3e2e94c7000ade2893d3c34877a2ecc22483b0df2e7efac8faf9e6",
+      "members": [
+        {
+          "image_id": "banana_bunchy_top_Bing_0245.jpg",
+          "split": "train",
+          "class_name": "banana | banana bunchy top"
+        },
+        {
+          "image_id": "banana_bunchy_top_Bing_0122.jpg",
+          "split": "val",
+          "class_name": "banana | banana bunchy top"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_bunchy_top_Bing_0245.jpg",
+        "banana_bunchy_top_Bing_0122.jpg"
+      ]
+    },
+    {
+      "sha256": "6799cd9660ab9882063a8044e02cc5209151f162eb35e2164d2f19b19d52347f",
+      "members": [
+        {
+          "image_id": "banana_bunchy_top_Bing_0141.jpg",
+          "split": "train",
+          "class_name": "banana | banana bunchy top"
+        },
+        {
+          "image_id": "banana_bunchy_top_Bing_0347.jpg",
+          "split": "train",
+          "class_name": "banana | banana bunchy top"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_bunchy_top_Bing_0141.jpg",
+        "banana_bunchy_top_Bing_0347.jpg"
+      ]
+    },
+    {
+      "sha256": "e1c4e64914371948f40ecde9582d051cc4018d7b026397516e38bbd9f5a51d23",
+      "members": [
+        {
+          "image_id": "banana_bunchy_top_Bing_0189.jpg",
+          "split": "train",
+          "class_name": "banana | banana bunchy top"
+        },
+        {
+          "image_id": "banana_bunchy_top_Bing_0152.jpg",
+          "split": "test",
+          "class_name": "banana | banana bunchy top"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_bunchy_top_Bing_0189.jpg",
+        "banana_bunchy_top_Bing_0152.jpg"
+      ]
+    },
+    {
+      "sha256": "a94583c63ddd711003639e3f000a945bd2b4fb39c1e5a15e6414371a0acd3d34",
+      "members": [
+        {
+          "image_id": "banana_bunchy_top_Bing_0242.jpg",
+          "split": "val",
+          "class_name": "banana | banana bunchy top"
+        },
+        {
+          "image_id": "banana_bunchy_top_Bing_0345.jpg",
+          "split": "val",
+          "class_name": "banana | banana bunchy top"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_bunchy_top_Bing_0242.jpg",
+        "banana_bunchy_top_Bing_0345.jpg"
+      ]
+    },
+    {
+      "sha256": "5124643baf78a5974e4f16389a8501eb58e6ac30ae2db456d53d89bee979f022",
+      "members": [
+        {
+          "image_id": "banana_cigar_end_rot_Bing_0011.jpg",
+          "split": "train",
+          "class_name": "banana | banana cigar end rot"
+        },
+        {
+          "image_id": "banana_cigar_end_rot_Google_0035.jpg",
+          "split": "train",
+          "class_name": "banana | banana cigar end rot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_cigar_end_rot_Bing_0011.jpg",
+        "banana_cigar_end_rot_Google_0035.jpg"
+      ]
+    },
+    {
+      "sha256": "ebf5e213faaa25299990dd2a243abbda9416e7143aa6bf31c8f0384c070f6915",
+      "members": [
+        {
+          "image_id": "banana_cigar_end_rot_Google_0010.jpg",
+          "split": "train",
+          "class_name": "banana | banana cigar end rot"
+        },
+        {
+          "image_id": "banana_cigar_end_rot_Bing_0002.jpg",
+          "split": "test",
+          "class_name": "banana | banana cigar end rot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_cigar_end_rot_Google_0010.jpg",
+        "banana_cigar_end_rot_Bing_0002.jpg"
+      ]
+    },
+    {
+      "sha256": "17742b314aec28f29d37273c256ed5777c71015c9b34ccd4c6c39e2a781ff249",
+      "members": [
+        {
+          "image_id": "banana_cordana_leaf_spot_Bing_0005.jpg",
+          "split": "train",
+          "class_name": "banana | banana cordana leaf spot"
+        },
+        {
+          "image_id": "banana_cordana_leaf_spot_Google_0014.jpg",
+          "split": "train",
+          "class_name": "banana | banana cordana leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_cordana_leaf_spot_Bing_0005.jpg",
+        "banana_cordana_leaf_spot_Google_0014.jpg"
+      ]
+    },
+    {
+      "sha256": "4d6953efee6a27c9ecb070e6ca583eb97bd5b1c4c0082a6dfcea7b632321caf0",
+      "members": [
+        {
+          "image_id": "citrus_canker_279.jpg",
+          "split": "train",
+          "class_name": "citrus | citrus canker"
+        },
+        {
+          "image_id": "citrus_canker_276.jpg",
+          "split": "test",
+          "class_name": "citrus | citrus canker"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "citrus_canker_279.jpg",
+        "citrus_canker_276.jpg"
+      ]
+    },
+    {
+      "sha256": "7f269a3b6ec36e1e1f027eb4ca1313d680849a45efb9759fc3b3ac67be733578",
+      "members": [
+        {
+          "image_id": "citrus_canker_306.jpg",
+          "split": "train",
+          "class_name": "citrus | citrus canker"
+        },
+        {
+          "image_id": "citrus_canker_308.jpg",
+          "split": "train",
+          "class_name": "citrus | citrus canker"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "citrus_canker_306.jpg",
+        "citrus_canker_308.jpg"
+      ]
+    },
+    {
+      "sha256": "bd539d3ed39a47b0d3c04df31fd09126f5bac944344ae1d60dee286e99248ef1",
+      "members": [
+        {
+          "image_id": "potato_early_blight_100.jpg",
+          "split": "train",
+          "class_name": "potato | potato early blight"
+        },
+        {
+          "image_id": "potato_early_blight_31.jpg",
+          "split": "train",
+          "class_name": "potato | potato early blight"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "potato_early_blight_100.jpg",
+        "potato_early_blight_31.jpg"
+      ]
+    },
+    {
+      "sha256": "241fc95a73e16f55e079a763ca86e6605b94d265bc0f37e2cd591ba63e43fbe8",
+      "members": [
+        {
+          "image_id": "tomato_early_blight_246.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato early blight"
+        },
+        {
+          "image_id": "potato_early_blight_41.jpg",
+          "split": "val",
+          "class_name": "potato | potato early blight"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_early_blight_246.jpg",
+        "potato_early_blight_41.jpg"
+      ]
+    },
+    {
+      "sha256": "cf6f3e5c70308ca46fb6ea1c7931e172efd5a064dce702bb5b0b8ce32d3414f0",
+      "members": [
+        {
+          "image_id": "potato_early_blight_55.jpg",
+          "split": "train",
+          "class_name": "potato | potato early blight"
+        },
+        {
+          "image_id": "potato_late_blight_10.jpg",
+          "split": "train",
+          "class_name": "potato | potato late blight"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "potato_early_blight_55.jpg",
+        "potato_late_blight_10.jpg"
+      ]
+    },
+    {
+      "sha256": "8825163e6ed481ad9f1c6b6f9b01836a37965b543ce6064ce3011a887c49ff9a",
+      "members": [
+        {
+          "image_id": "potato_early_blight_google_0005.jpg",
+          "split": "train",
+          "class_name": "potato | potato early blight"
+        },
+        {
+          "image_id": "tomato_early_blight_google_0044.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato early blight"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "potato_early_blight_google_0005.jpg",
+        "tomato_early_blight_google_0044.jpg"
+      ]
+    },
+    {
+      "sha256": "61155c1c1618426413a4aeed3153f5ec72f5d608a99eb6a14c0087e1b702b5a3",
+      "members": [
+        {
+          "image_id": "potato_early_blight_google_0055.jpg",
+          "split": "train",
+          "class_name": "potato | potato early blight"
+        },
+        {
+          "image_id": "tomato_early_blight_google_0120.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato early blight"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "potato_early_blight_google_0055.jpg",
+        "tomato_early_blight_google_0120.jpg"
+      ]
+    },
+    {
+      "sha256": "a2dfc65c915313158b41c3e7ef2efdf649f38ec4b422e3bc320405040d9f1850",
+      "members": [
+        {
+          "image_id": "potato_early_blight_google_0100.jpg",
+          "split": "val",
+          "class_name": "potato | potato early blight"
+        },
+        {
+          "image_id": "tomato_early_blight_google_0041.jpg",
+          "split": "test",
+          "class_name": "tomato | tomato early blight"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "potato_early_blight_google_0100.jpg",
+        "tomato_early_blight_google_0041.jpg"
+      ]
+    },
+    {
+      "sha256": "b7028097fd9d0f880ba0c3cae23448c670a9d0bfe3cc90ab2a6ba99a302865c0",
+      "members": [
+        {
+          "image_id": "potato_early_blight_google_0200.jpg",
+          "split": "train",
+          "class_name": "potato | potato early blight"
+        },
+        {
+          "image_id": "tomato_early_blight_google_0343.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato early blight"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "potato_early_blight_google_0200.jpg",
+        "tomato_early_blight_google_0343.jpg"
+      ]
+    },
+    {
+      "sha256": "82c339146e8298c4c8bf20cfc2f037c476ae8c0587a18a55253fff3ebf8ddd7e",
+      "members": [
+        {
+          "image_id": "potato_early_blight_google_0284.jpg",
+          "split": "train",
+          "class_name": "potato | potato early blight"
+        },
+        {
+          "image_id": "potato_late_blight_google_0035.jpg",
+          "split": "train",
+          "class_name": "potato | potato late blight"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "potato_early_blight_google_0284.jpg",
+        "potato_late_blight_google_0035.jpg"
+      ]
+    },
+    {
+      "sha256": "b0a99717978fd0f3c8f2b014a4a46efc840cd642a9aa117377ed734c0b1c1508",
+      "members": [
+        {
+          "image_id": "soybean_bacterial_blight_Bing_0000.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean bacterial blight"
+        },
+        {
+          "image_id": "soybean_brown_spot_Bing_0051.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "soybean_bacterial_blight_Bing_0000.jpg",
+        "soybean_brown_spot_Bing_0051.jpg"
+      ]
+    },
+    {
+      "sha256": "1eb8a8ec30ff8e55a65b446d098f86a72e31c7fb9c3d2d21dd504cd8d19b094c",
+      "members": [
+        {
+          "image_id": "soybean_bacterial_blight_Bing_0103.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean bacterial blight"
+        },
+        {
+          "image_id": "soybean_brown_spot_Bing_0049.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "soybean_bacterial_blight_Bing_0103.jpg",
+        "soybean_brown_spot_Bing_0049.jpg"
+      ]
+    },
+    {
+      "sha256": "860412c68fdf96156f03afa420054d76cd7b37fd6ee998647f5973237bb8ee64",
+      "members": [
+        {
+          "image_id": "soybean_brown_spot_Bing_0041.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        },
+        {
+          "image_id": "soybean_bacterial_blight_Bing_0119.jpg",
+          "split": "val",
+          "class_name": "soybean | soybean bacterial blight"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "soybean_brown_spot_Bing_0041.jpg",
+        "soybean_bacterial_blight_Bing_0119.jpg"
+      ]
+    },
+    {
+      "sha256": "6fcef7f1a88a538799504342e5b244c6274d8d0388fb651d038db07802b3e94e",
+      "members": [
+        {
+          "image_id": "soybean_brown_spot_Baidu_0031.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Baidu_0012.jpg",
+          "split": "test",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "soybean_brown_spot_Baidu_0031.jpg",
+        "soybean_frog_eye_leaf_spot_Baidu_0012.jpg"
+      ]
+    },
+    {
+      "sha256": "d9f35990f160cd74bdfdae27c51691e43b0c7120dcc83d18735d5e938dec54d3",
+      "members": [
+        {
+          "image_id": "soybean_brown_spot_Bing_0042.jpg",
+          "split": "val",
+          "class_name": "soybean | soybean brown spot"
+        },
+        {
+          "image_id": "soybean_brown_spot_Bing_0025.jpg",
+          "split": "test",
+          "class_name": "soybean | soybean brown spot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_brown_spot_Bing_0042.jpg",
+        "soybean_brown_spot_Bing_0025.jpg"
+      ]
+    },
+    {
+      "sha256": "5da6773c8642665d5c09f128e525d2cddfa7ee318c55110655bfb148398376b6",
+      "members": [
+        {
+          "image_id": "soybean_brown_spot_Bing_0046.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        },
+        {
+          "image_id": "soybean_brown_spot_Bing_0070.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        },
+        {
+          "image_id": "soybean_bacterial_blight_Bing_0105.jpg",
+          "split": "test",
+          "class_name": "soybean | soybean bacterial blight"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "soybean_brown_spot_Bing_0046.jpg",
+        "soybean_brown_spot_Bing_0070.jpg",
+        "soybean_bacterial_blight_Bing_0105.jpg"
+      ]
+    },
+    {
+      "sha256": "02eeaf335edff2fbafcf59adede4416c33d3bcecf7a27a7634b976f6997e29cf",
+      "members": [
+        {
+          "image_id": "soybean_brown_spot_Bing_0129.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        },
+        {
+          "image_id": "soybean_brown_spot_Bing_0161.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_brown_spot_Bing_0129.jpg",
+        "soybean_brown_spot_Bing_0161.jpg"
+      ]
+    },
+    {
+      "sha256": "66a5c047206c900596a1b9e68c78e978fdff4301c5c932cb615373a121e540ab",
+      "members": [
+        {
+          "image_id": "soybean_brown_spot_Bing_0132.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        },
+        {
+          "image_id": "soybean_brown_spot_Bing_0160.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_brown_spot_Bing_0132.jpg",
+        "soybean_brown_spot_Bing_0160.jpg"
+      ]
+    },
+    {
+      "sha256": "12430fb30dea8d8db8c11fb795b798e28d6f563155a9439889601453d2fa4d35",
+      "members": [
+        {
+          "image_id": "soybean_brown_spot_Bing_0241.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        },
+        {
+          "image_id": "soybean_brown_spot_Bing_0261.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean brown spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_brown_spot_Bing_0241.jpg",
+        "soybean_brown_spot_Bing_0261.jpg"
+      ]
+    },
+    {
+      "sha256": "69855fcf20fcfeb901baaef696f3737ddc8ab55387ecc054e61dcf8efb08b721",
+      "members": [
+        {
+          "image_id": "soybean_downy_mildew_Bing_0020.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean downy mildew"
+        },
+        {
+          "image_id": "soybean_downy_mildew_Google_0023.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean downy mildew"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_downy_mildew_Bing_0020.jpg",
+        "soybean_downy_mildew_Google_0023.jpg"
+      ]
+    },
+    {
+      "sha256": "3184640a0734bd21b2fc3bc0931d043e3e7bf0f853109226df52ec6b203cb6ea",
+      "members": [
+        {
+          "image_id": "soybean_downy_mildew_Bing_0071.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean downy mildew"
+        },
+        {
+          "image_id": "soybean_downy_mildew_Google_0090.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean downy mildew"
+        },
+        {
+          "image_id": "soybean_downy_mildew_Google_0127.jpg",
+          "split": "val",
+          "class_name": "soybean | soybean downy mildew"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_downy_mildew_Bing_0071.jpg",
+        "soybean_downy_mildew_Google_0090.jpg",
+        "soybean_downy_mildew_Google_0127.jpg"
+      ]
+    },
+    {
+      "sha256": "448e8d3f2959f4760415d52ac7382d1852e7df22ed0785a1970fbb3f8e944e91",
+      "members": [
+        {
+          "image_id": "soybean_downy_mildew_Bing_0076.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean downy mildew"
+        },
+        {
+          "image_id": "soybean_downy_mildew_Google_0061.jpg",
+          "split": "test",
+          "class_name": "soybean | soybean downy mildew"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_downy_mildew_Bing_0076.jpg",
+        "soybean_downy_mildew_Google_0061.jpg"
+      ]
+    },
+    {
+      "sha256": "3b55f29071d0799502a06366f0a15827e3439a8efb564ed8fa5fc76cd61b2e0c",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0018.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Google_0004.jpg",
+          "split": "val",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Bing_0018.jpg",
+        "soybean_frog_eye_leaf_spot_Google_0004.jpg"
+      ]
+    },
+    {
+      "sha256": "1a368aa8867b44c8718ec479dc779c680bbfdaf8c8aa965f91fa08d36449bb09",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0039.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0004.jpg",
+          "split": "test",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Bing_0039.jpg",
+        "soybean_frog_eye_leaf_spot_Bing_0004.jpg"
+      ]
+    },
+    {
+      "sha256": "30cee5d01978b96151e1944893ec8eebdd70506d628286d1f46f434fe1bf226b",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0046.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Google_0018.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Bing_0046.jpg",
+        "soybean_frog_eye_leaf_spot_Google_0018.jpg"
+      ]
+    },
+    {
+      "sha256": "d3385a471028605077d56ffcb22fd28733bef3a77c50cedbc962a105aff94536",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0091.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Google_0149.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Bing_0091.jpg",
+        "soybean_frog_eye_leaf_spot_Google_0149.jpg"
+      ]
+    },
+    {
+      "sha256": "4c62457c1e78d9824c01ddbef098b7969123552e0de6084792d4aae279fa7655",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0093.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Google_0284.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Bing_0093.jpg",
+        "soybean_frog_eye_leaf_spot_Google_0284.jpg"
+      ]
+    },
+    {
+      "sha256": "71e513268b1c23c95274a1ab9b3305d051149701b65baf56d820f3bbdc664132",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0172.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Google_0327.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Bing_0172.jpg",
+        "soybean_frog_eye_leaf_spot_Google_0327.jpg"
+      ]
+    },
+    {
+      "sha256": "db13af7205a25d07b3e93682800503cf4d120e68cceb2514a611b9758b28a6d2",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0178.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Google_0015.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Bing_0178.jpg",
+        "soybean_frog_eye_leaf_spot_Google_0015.jpg"
+      ]
+    },
+    {
+      "sha256": "096f122839c1de56887321808f63f751529ecb8cc0dea911f10500ec31eed251",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0184.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Google_0213.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Bing_0184.jpg",
+        "soybean_frog_eye_leaf_spot_Google_0213.jpg"
+      ]
+    },
+    {
+      "sha256": "15367983859760fbc6d577c298bd4fe5ea12dac21f131f3c388bdab6d1a1de9d",
+      "members": [
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Google_0218.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        },
+        {
+          "image_id": "soybean_frog_eye_leaf_spot_Bing_0089.jpg",
+          "split": "test",
+          "class_name": "soybean | soybean frog eye leaf spot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_frog_eye_leaf_spot_Google_0218.jpg",
+        "soybean_frog_eye_leaf_spot_Bing_0089.jpg"
+      ]
+    },
+    {
+      "sha256": "8d7a9c993790906174c2e0cdee60360196d510c29bec6498890208791d6ac361",
+      "members": [
+        {
+          "image_id": "soybean_mosaic_Google_0090.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean mosaic"
+        },
+        {
+          "image_id": "soybean_mosaic_Bing_0070.jpg",
+          "split": "val",
+          "class_name": "soybean | soybean mosaic"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_mosaic_Google_0090.jpg",
+        "soybean_mosaic_Bing_0070.jpg"
+      ]
+    },
+    {
+      "sha256": "bbba9e6f3b76e3c43e6732c81f46df5d8cbd5b9b51bac64e421ae0b690efe28e",
+      "members": [
+        {
+          "image_id": "soybean_rust_Bing_0098.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean rust"
+        },
+        {
+          "image_id": "soybean_rust_Google_0010.jpg",
+          "split": "train",
+          "class_name": "soybean | soybean rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "soybean_rust_Bing_0098.jpg",
+        "soybean_rust_Google_0010.jpg"
+      ]
+    },
+    {
+      "sha256": "6aa91250faa45729379bb54dd5ae093d5f0fd8dc52d8c28897b13f0b29810428",
+      "members": [
+        {
+          "image_id": "tomato_septoria_leaf_spot_6.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato septoria leaf spot"
+        },
+        {
+          "image_id": "tomato_bacterial_leaf_spot_28.jpg",
+          "split": "val",
+          "class_name": "tomato | tomato bacterial leaf spot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_septoria_leaf_spot_6.jpg",
+        "tomato_bacterial_leaf_spot_28.jpg"
+      ]
+    },
+    {
+      "sha256": "72e528891dbc9570460b77b5e38fb66ecdbecf7f410297910d27e96ad914d8b3",
+      "members": [
+        {
+          "image_id": "tomato_bacterial_leaf_spot_google_0017.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato bacterial leaf spot"
+        },
+        {
+          "image_id": "tomato_septoria_leaf_spot_google_0113.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato septoria leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_bacterial_leaf_spot_google_0017.jpg",
+        "tomato_septoria_leaf_spot_google_0113.jpg"
+      ]
+    },
+    {
+      "sha256": "b2970f4fdf5ee1328c860970fbbaee8275340e4e0b40a4c79605bc053f3f66e7",
+      "members": [
+        {
+          "image_id": "tomato_bacterial_leaf_spot_google_0091.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato bacterial leaf spot"
+        },
+        {
+          "image_id": "tomato_septoria_leaf_spot_google_0204.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato septoria leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_bacterial_leaf_spot_google_0091.jpg",
+        "tomato_septoria_leaf_spot_google_0204.jpg"
+      ]
+    },
+    {
+      "sha256": "5923775a4cb8ff783a133a5790d64c1c84a3852dfac7dd0a0435133897d2ed2d",
+      "members": [
+        {
+          "image_id": "tomato_early_blight_google_0260.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato early blight"
+        },
+        {
+          "image_id": "tomato_septoria_leaf_spot_google_0205.jpg",
+          "split": "test",
+          "class_name": "tomato | tomato septoria leaf spot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_early_blight_google_0260.jpg",
+        "tomato_septoria_leaf_spot_google_0205.jpg"
+      ]
+    },
+    {
+      "sha256": "b28a9de7d36f62abe24ac3fa019aacb9bd55f0c2fd4c720841a531d0910f63bf",
+      "members": [
+        {
+          "image_id": "tomato_yellow_leaf_curl_virus_11.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato yellow leaf curl virus"
+        },
+        {
+          "image_id": "tomato_mosaic_virus_1.jpg",
+          "split": "val",
+          "class_name": "tomato | tomato mosaic virus"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_yellow_leaf_curl_virus_11.jpg",
+        "tomato_mosaic_virus_1.jpg"
+      ]
+    },
+    {
+      "sha256": "8942626a554683459e739fa0fd8e10b86dd088713e9ca209d4f7e5d3a2034782",
+      "members": [
+        {
+          "image_id": "tomato_mosaic_virus_13.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato mosaic virus"
+        },
+        {
+          "image_id": "tomato_yellow_leaf_curl_virus_4.jpg",
+          "split": "test",
+          "class_name": "tomato | tomato yellow leaf curl virus"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_mosaic_virus_13.jpg",
+        "tomato_yellow_leaf_curl_virus_4.jpg"
+      ]
+    },
+    {
+      "sha256": "2dbca3fcbc0404a40be1a4ca71ecf8dbe1fbd0b8c9fe52b12bfd179cc9dad867",
+      "members": [
+        {
+          "image_id": "tomato_mosaic_virus_2.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato mosaic virus"
+        },
+        {
+          "image_id": "tomato_yellow_leaf_curl_virus_1.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato yellow leaf curl virus"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_mosaic_virus_2.jpg",
+        "tomato_yellow_leaf_curl_virus_1.jpg"
+      ]
+    },
+    {
+      "sha256": "d0d65a48c4abd35fc5054e3159c7da1a9831edf9d99a5e14d0f5d0a34cc7987c",
+      "members": [
+        {
+          "image_id": "tomato_septoria_leaf_spot_google_0052.jpg",
+          "split": "train",
+          "class_name": "tomato | tomato septoria leaf spot"
+        },
+        {
+          "image_id": "tomato_bacterial_leaf_spot_google_0163.jpg",
+          "split": "test",
+          "class_name": "tomato | tomato bacterial leaf spot"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_septoria_leaf_spot_google_0052.jpg",
+        "tomato_bacterial_leaf_spot_google_0163.jpg"
+      ]
+    },
+    {
+      "sha256": "ed4cfb527f413d5652e8c04319764f5e1320fb5b2687ed13de0a1607a4280bf4",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (23).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_bacterial_leaf_streak_(black_chaff)_Bing_0002.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat bacterial leaf streak (black chaff)"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (23).jpg",
+        "wheat_bacterial_leaf_streak_(black_chaff)_Bing_0002.jpg"
+      ]
+    },
+    {
+      "sha256": "9396b9eb07036ff0aa24dc63b0e5c28889b98d0b2e8685f8c0b0b988b0cb43fc",
+      "members": [
+        {
+          "image_id": "wheat_bacterial_leaf_streak_(black_chaff)_Bing_0006.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat bacterial leaf streak (black chaff)"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (100).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (22).jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "wheat_bacterial_leaf_streak_(black_chaff)_Bing_0006.jpg",
+        "wheat_septoria_blotch_blotch (100).jpg",
+        "wheat_septoria_blotch_blotch (22).jpg"
+      ]
+    },
+    {
+      "sha256": "94db8e4fd30a151d7a800ce3f6e1e3188711e2ab931b087fcf453131587f0010",
+      "members": [
+        {
+          "image_id": "wheat_bacterial_leaf_streak_(black_chaff)_Google_0363.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat bacterial leaf streak (black chaff)"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_Google_0174.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "wheat_bacterial_leaf_streak_(black_chaff)_Google_0363.jpg",
+        "wheat_septoria_blotch_Google_0174.jpg"
+      ]
+    },
+    {
+      "sha256": "e442438cf8a34066cccc99deee859584a4fb6d4a75450eabdd6349ee0950ab1d",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0085.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0298.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0085.jpg",
+        "wheat_head_scab_Baidu_0298.jpg"
+      ]
+    },
+    {
+      "sha256": "529075c316c1fdd13c2b402e1fae74d8370782d75d37d1957e1037dc962df6aa",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0091.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0094.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0091.jpg",
+        "wheat_head_scab_Baidu_0094.jpg"
+      ]
+    },
+    {
+      "sha256": "9fe3ea8f4588f9840cd7efe0563a2ed6a948cdaacec1ecfb3b37f5e21e880935",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0092.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0095.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0092.jpg",
+        "wheat_head_scab_Baidu_0095.jpg"
+      ]
+    },
+    {
+      "sha256": "571daad7dc5a57e8a7f8fcc92af51d37d3c2bba4524990dd2d31a828a8418845",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0131.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0364.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0131.jpg",
+        "wheat_head_scab_Baidu_0364.jpg"
+      ]
+    },
+    {
+      "sha256": "59665ec56a977fd034419962b50432114c5c64cb91e1df7abb431718d968b96b",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0192.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0289.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0192.jpg",
+        "wheat_head_scab_Baidu_0289.jpg"
+      ]
+    },
+    {
+      "sha256": "5bdf10f718b3494ec8393f65dc03c07388907de202c73e092271e93058a9e702",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0194.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0296.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0194.jpg",
+        "wheat_head_scab_Baidu_0296.jpg"
+      ]
+    },
+    {
+      "sha256": "0db2293af54add560652ddcfb4edd5a3653de393818b4ca698e8ba823cce5615",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0197.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0303.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0197.jpg",
+        "wheat_head_scab_Baidu_0303.jpg"
+      ]
+    },
+    {
+      "sha256": "d29e0d15b76672bd6e3d9b38cfc7179f6c50ac428a15edf12e26cdb564c96a21",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0202.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0310.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0202.jpg",
+        "wheat_head_scab_Baidu_0310.jpg"
+      ]
+    },
+    {
+      "sha256": "e1fe7c4345d635f739eb983b9c29940022d1f7ea07ea4d2f5241d829453369a3",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0215.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0322.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0215.jpg",
+        "wheat_head_scab_Baidu_0322.jpg"
+      ]
+    },
+    {
+      "sha256": "9ca548b3456c9e2d436b82db0f32436decd5c8d6fc7a0aec6fc10e531b8e6d65",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0344.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0231.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0344.jpg",
+        "wheat_head_scab_Baidu_0231.jpg"
+      ]
+    },
+    {
+      "sha256": "68680257f91fadd2b080956269eb57ac12108efcb17fc39621a00a9e0c7fafff",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0247.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0368.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0247.jpg",
+        "wheat_head_scab_Baidu_0368.jpg"
+      ]
+    },
+    {
+      "sha256": "40efce617ff39f9f1988e2d104b6d294d69660226012236a8a6226ca4b523cf4",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0254.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0380.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0254.jpg",
+        "wheat_head_scab_Baidu_0380.jpg"
+      ]
+    },
+    {
+      "sha256": "64224c61dface794c4f5979f49cec1ab202d8c4f276d99ae977e427cfef80d63",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0257.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0383.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0257.jpg",
+        "wheat_head_scab_Baidu_0383.jpg"
+      ]
+    },
+    {
+      "sha256": "43c6e137f5b575443d0163f2d7c9fc20629dfb130bb02cf3843c2ec8a1c9aec2",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0271.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0394.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0271.jpg",
+        "wheat_head_scab_Baidu_0394.jpg"
+      ]
+    },
+    {
+      "sha256": "87ce99897f7450671ca6ddc32d8171444e4adbae3903532f14099854bfc46eb5",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0276.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0399.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0276.jpg",
+        "wheat_head_scab_Baidu_0399.jpg"
+      ]
+    },
+    {
+      "sha256": "612944e8ccb16492bc97c41e1d88fb4e995045938abfc24b5423e5697e72767b",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0282.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0404.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0282.jpg",
+        "wheat_head_scab_Baidu_0404.jpg"
+      ]
+    },
+    {
+      "sha256": "5b2c69e59ebe95d7de19ba471d6ee47fc8997a792127cc5a9abbc80dbc6240dd",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0291.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0065.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0291.jpg",
+        "wheat_head_scab_Baidu_0065.jpg"
+      ]
+    },
+    {
+      "sha256": "40de3ac854a0c409e0ab3a00bf887d9a7f578e6af165fb6a0570a6f54bd0325e",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0403.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0281.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0403.jpg",
+        "wheat_head_scab_Baidu_0281.jpg"
+      ]
+    },
+    {
+      "sha256": "ac485dccd32277f7246543791b45054252b7151f81dd1ad749d737ed1fa4c97f",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0008.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Bing_0202.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Google_0259.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0008.jpg",
+        "wheat_head_scab_Bing_0202.jpg",
+        "wheat_head_scab_Google_0259.jpg"
+      ]
+    },
+    {
+      "sha256": "1eedeb978ce4fcbad8b6d0fabeb15f33b9d8cd2359929cebcf102e50dc1faa25",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0014.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Bing_0206.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0014.jpg",
+        "wheat_head_scab_Bing_0206.jpg"
+      ]
+    },
+    {
+      "sha256": "444084a7a78db548f3f5793a59b78ea9f04a1b77885eddc8419f81f5bbd474fc",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0036.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Bing_0144.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0036.jpg",
+        "wheat_head_scab_Bing_0144.jpg"
+      ]
+    },
+    {
+      "sha256": "52198bd0224654d18148c05077e8a785af57e4ea4482a15f43b12aa8731aaf05",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0067.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Bing_0132.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0067.jpg",
+        "wheat_head_scab_Bing_0132.jpg"
+      ]
+    },
+    {
+      "sha256": "d0301e8451e790cde54357af0e5d132e82c8c7de0c8023fad536924170a48995",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0100.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Google_0105.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0100.jpg",
+        "wheat_head_scab_Google_0105.jpg"
+      ]
+    },
+    {
+      "sha256": "18e3ea9d29778bf9d0363fd35051ac1d28fc6647f38afff498a310ccdd87ef68",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0109.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Bing_0043.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0109.jpg",
+        "wheat_head_scab_Bing_0043.jpg"
+      ]
+    },
+    {
+      "sha256": "a818d58d3fdedd2872c8cd7f189843c27dabcf1ac4b21e00aab4772b981dc1fa",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0145.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Google_0083.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0145.jpg",
+        "wheat_head_scab_Google_0083.jpg"
+      ]
+    },
+    {
+      "sha256": "0eaf358d7bb13708a7749b78337ba209efd5375d5678bb60bc05fa3951fce76f",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0156.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Bing_0023.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0156.jpg",
+        "wheat_head_scab_Bing_0023.jpg"
+      ]
+    },
+    {
+      "sha256": "fc6e1bc31178d302b7c96fd512589a2ee53a9e08f0b8c7bc04cd8a960efe3b53",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0175.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Google_0196.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0175.jpg",
+        "wheat_head_scab_Google_0196.jpg"
+      ]
+    },
+    {
+      "sha256": "f144ffdff2c690492f0e21244aebf6270fe54a7d03c1f715fbfb8ffcdab4ed2c",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Bing_0229.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Bing_0040.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Bing_0229.jpg",
+        "wheat_head_scab_Bing_0040.jpg"
+      ]
+    },
+    {
+      "sha256": "3994aade5aa29709f03460dd77f164aad89de54b3809dfc8f51a4232df10119d",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Google_0229.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Bing_0219.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Google_0229.jpg",
+        "wheat_head_scab_Bing_0219.jpg"
+      ]
+    },
+    {
+      "sha256": "5750d27853338e7449fb3d3cbdc8c63c4049175bbd7e065c44c97a18144e6635",
+      "members": [
+        {
+          "image_id": "wheat_leaf_rust_Bing_0001.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat leaf rust"
+        },
+        {
+          "image_id": "wheat_leaf_rust_Google_0000.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat leaf rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_leaf_rust_Bing_0001.jpg",
+        "wheat_leaf_rust_Google_0000.jpg"
+      ]
+    },
+    {
+      "sha256": "cdc9a558bdb8b5e834fe601cd080635ec169801dd3e3277bb3ab93a8784a3370",
+      "members": [
+        {
+          "image_id": "wheat_leaf_rust_Bing_0009.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat leaf rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0028.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "wheat_leaf_rust_Bing_0009.jpg",
+        "wheat_stripe_rust_Bing_0028.jpg"
+      ]
+    },
+    {
+      "sha256": "ab494848c3e58e33dd0bfb6b0c3f6dfa16c94b3184d0b564e44c5ab919a7cbfe",
+      "members": [
+        {
+          "image_id": "wheat_leaf_rust_Google_0066.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat leaf rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Google_0147.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "wheat_leaf_rust_Google_0066.jpg",
+        "wheat_stripe_rust_Google_0147.jpg"
+      ]
+    },
+    {
+      "sha256": "515c1fbd2ecaf738603a73d2b320ca3ad6da6622fdd0429c1e51e356e186d90a",
+      "members": [
+        {
+          "image_id": "wheat_leaf_rust_Google_0355.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat leaf rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0247.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "wheat_leaf_rust_Google_0355.jpg",
+        "wheat_stripe_rust_Bing_0247.jpg"
+      ]
+    },
+    {
+      "sha256": "c723d67c8ef5c739d21e9495c05fad74b04df1cd3acf9d68e815e8fb2270ce72",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0014.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Google_0002.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0014.jpg",
+        "wheat_loose_smut_Google_0002.jpg"
+      ]
+    },
+    {
+      "sha256": "4f7459a7274041171bc1fe20c81c91661ee8d1328ab55f2d7ddc6723b3bf7f5d",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0015.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Google_0041.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0015.jpg",
+        "wheat_loose_smut_Google_0041.jpg"
+      ]
+    },
+    {
+      "sha256": "acd2d940780e668521b50402a7c5d60f912f6b91899701a40249bd9d63ab8c0f",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0023.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0192.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0023.jpg",
+        "wheat_loose_smut_Bing_0192.jpg"
+      ]
+    },
+    {
+      "sha256": "8f0145f58257979d24e003fe985d53b9e1d83b2204ef8ef491f6a1c45f24dc0b",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0169.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0043.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0169.jpg",
+        "wheat_loose_smut_Bing_0043.jpg"
+      ]
+    },
+    {
+      "sha256": "695348e9a18dd5fa7dc65b8b4bee96e6b0cf827a97da4d36f14bb9bd0beb3dab",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0079.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0100.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0079.jpg",
+        "wheat_loose_smut_Bing_0100.jpg"
+      ]
+    },
+    {
+      "sha256": "6947b74d0ab32b5426b6737794db7ee3c9d450562e0fd3a3f5f1de0c026170f6",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0091.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Google_0132.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0091.jpg",
+        "wheat_loose_smut_Google_0132.jpg"
+      ]
+    },
+    {
+      "sha256": "9489c95737722725cdd4ed78e0447f04a04c2391daf27854f07dcedb0604ec82",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0104.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0129.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0008.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0104.jpg",
+        "wheat_loose_smut_Bing_0129.jpg",
+        "wheat_loose_smut_Bing_0008.jpg"
+      ]
+    },
+    {
+      "sha256": "61fd80fc1bff7d5feb51dafa6271cf98d7237dd4ca9cdbac3d9117d04e56dc83",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0111.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0145.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0111.jpg",
+        "wheat_loose_smut_Bing_0145.jpg"
+      ]
+    },
+    {
+      "sha256": "6fa16680f31f8301a2bacd46d52ba128df7965720522f548cd3d2d15972cadca",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0200.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0228.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0200.jpg",
+        "wheat_loose_smut_Bing_0228.jpg"
+      ]
+    },
+    {
+      "sha256": "44361d9c7bf579fa089fd9a885dc1b8c3e76e516ae395bc47ef2b4ef8fbab04d",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0224.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Google_0065.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0224.jpg",
+        "wheat_loose_smut_Google_0065.jpg"
+      ]
+    },
+    {
+      "sha256": "68e6829824b1d02c591084fe92d94d9c38bec38510835734bf59ee6a270c71c1",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0236.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0268.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0236.jpg",
+        "wheat_loose_smut_Bing_0268.jpg"
+      ]
+    },
+    {
+      "sha256": "5e6f81e6b830d2657742dc13aaad2e05f62075b4ed1d6231fe09f6558c38a2a2",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0321.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0384.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0321.jpg",
+        "wheat_loose_smut_Bing_0384.jpg"
+      ]
+    },
+    {
+      "sha256": "535a0b1f33a78a63b7c708c78a0a4eb1caac572ad3612a83ce242e8c73c279d8",
+      "members": [
+        {
+          "image_id": "wheat_powdery_mildew_Bing_0059.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat powdery mildew"
+        },
+        {
+          "image_id": "wheat_powdery_mildew_Bing_0163.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat powdery mildew"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_powdery_mildew_Bing_0059.jpg",
+        "wheat_powdery_mildew_Bing_0163.jpg"
+      ]
+    },
+    {
+      "sha256": "20c6500f70ca5273c23add630ae005cc617fd2da91d33a62a1d0e84f2cd34081",
+      "members": [
+        {
+          "image_id": "wheat_powdery_mildew_Bing_0066.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat powdery mildew"
+        },
+        {
+          "image_id": "wheat_powdery_mildew_Google_0012.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat powdery mildew"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_powdery_mildew_Bing_0066.jpg",
+        "wheat_powdery_mildew_Google_0012.jpg"
+      ]
+    },
+    {
+      "sha256": "e1c6ed0922702f7073fa6ef5b01c09da97d6c53562bc4d1fe2affd6cf66d4f2c",
+      "members": [
+        {
+          "image_id": "wheat_powdery_mildew_Bing_0090.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat powdery mildew"
+        },
+        {
+          "image_id": "wheat_powdery_mildew_Google_0163.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat powdery mildew"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_powdery_mildew_Bing_0090.jpg",
+        "wheat_powdery_mildew_Google_0163.jpg"
+      ]
+    },
+    {
+      "sha256": "712b557b24f4419f8529264a5f67070e46e32e65aefff77aab85ee053740e361",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_Bing_0017.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (70).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_Bing_0017.jpg",
+        "wheat_septoria_blotch_blotch (70).jpg"
+      ]
+    },
+    {
+      "sha256": "040cce1e1e543a9d7e49ac16ac0f96c8cd332040877c01c54bb8913b3041ab1e",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_Google_0005.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_google_septoria (1).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_Google_0005.jpg",
+        "wheat_septoria_blotch_google_septoria (1).jpg"
+      ]
+    },
+    {
+      "sha256": "9c443f451a6a100d7153bd818e8e401ee3417bb142474b29ecfdb17ac68b7160",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_Google_0212.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_bacterial_leaf_streak_(black_chaff)_Google_0141.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat bacterial leaf streak (black chaff)"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "wheat_septoria_blotch_Google_0212.jpg",
+        "wheat_bacterial_leaf_streak_(black_chaff)_Google_0141.jpg"
+      ]
+    },
+    {
+      "sha256": "da4a6d3b501286fb7d1d85524538c8c72651cf39ab7b2a71a8ef5385762d8f89",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_Google_0338.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_google_septoria (25).jpg",
+          "split": "val",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_Google_0338.jpg",
+        "wheat_septoria_blotch_google_septoria (25).jpg"
+      ]
+    },
+    {
+      "sha256": "e6c5fd14d2a3fcea0ac90aa5208bc179bff2c63c7fcea5588a4c0d1a696ddb05",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (105).jpg",
+          "split": "val",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_Bing_0045.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (105).jpg",
+        "wheat_septoria_blotch_Bing_0045.jpg"
+      ]
+    },
+    {
+      "sha256": "64e8ac1ae0cc9ffc6195ffa600fef90f8ffff7b5a15610964a8368fb9c6d6975",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (14).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (69).jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (14).jpg",
+        "wheat_septoria_blotch_blotch (69).jpg"
+      ]
+    },
+    {
+      "sha256": "f412cea3f17575cb116b7af21daa8c5c0dfb4783639c5ab78a18be7df339edca",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (41).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (18).jpg",
+          "split": "val",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (41).jpg",
+        "wheat_septoria_blotch_blotch (18).jpg"
+      ]
+    },
+    {
+      "sha256": "19aca78ed1b090949dc692fa777d06c6b89a2e88ae8d196f673ab9ade123af17",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (30).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (96).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (30).jpg",
+        "wheat_septoria_blotch_blotch (96).jpg"
+      ]
+    },
+    {
+      "sha256": "8e95fb25e4d8e116cf036f7ad27949aacd035c6a59a30bc90a8eafaca2c5ef74",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (32).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (68).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (32).jpg",
+        "wheat_septoria_blotch_blotch (68).jpg"
+      ]
+    },
+    {
+      "sha256": "6f586fc6e2acc736c72ab76423892a1d8f874e6828e658e3144d127df7506349",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (33).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (79).jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (33).jpg",
+        "wheat_septoria_blotch_blotch (79).jpg"
+      ]
+    },
+    {
+      "sha256": "591e91f0cee5b04bb0500b4db355124140fa56403d52550bf06fa8e9af50ab93",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_google_septoria (10).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_Google_0058.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_google_septoria (10).jpg",
+        "wheat_septoria_blotch_Google_0058.jpg"
+      ]
+    },
+    {
+      "sha256": "9446491e254626cf27638d5d2f4677568b69bc341a832a55765fb5a8225c437d",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_google_septoria (13).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_Google_0206.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_google_septoria (13).jpg",
+        "wheat_septoria_blotch_Google_0206.jpg"
+      ]
+    },
+    {
+      "sha256": "95424622ed20158bf9d41e84bae1e5e2901d572e79a785d2e30630ddd53ee9f3",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_google_septoria (21).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_Google_0309.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_google_septoria (21).jpg",
+        "wheat_septoria_blotch_Google_0309.jpg"
+      ]
+    },
+    {
+      "sha256": "df8242893e26b0a99633aa1b34c30ccf57da6385124eabedba1d33d02204520c",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_google_septoria (6).jpg",
+          "split": "train",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_Google_0016.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_google_septoria (6).jpg",
+        "wheat_septoria_blotch_Google_0016.jpg"
+      ]
+    },
+    {
+      "sha256": "77a0f98acff1cacb31f0b9697e71f938fafa18985f5454eb44e34f026f4c3439",
+      "members": [
+        {
+          "image_id": "wheat_stem_rust_Bing_0001.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stem rust"
+        },
+        {
+          "image_id": "wheat_stem_rust_Bing_0111.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stem rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stem_rust_Bing_0001.jpg",
+        "wheat_stem_rust_Bing_0111.jpg"
+      ]
+    },
+    {
+      "sha256": "22c1679e03a2b68089a3c19c807a1f92dc2208c38f57090540429bf301500a37",
+      "members": [
+        {
+          "image_id": "wheat_stem_rust_Bing_0013.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stem rust"
+        },
+        {
+          "image_id": "wheat_stem_rust_Google_0052.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stem rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stem_rust_Bing_0013.jpg",
+        "wheat_stem_rust_Google_0052.jpg"
+      ]
+    },
+    {
+      "sha256": "e65eef68c3ae369234e17de11d55d0f56bcfb4185a6159f6e516ded73300d96c",
+      "members": [
+        {
+          "image_id": "wheat_stem_rust_Bing_0078.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stem rust"
+        },
+        {
+          "image_id": "wheat_stem_rust_Bing_0002.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stem rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stem_rust_Bing_0078.jpg",
+        "wheat_stem_rust_Bing_0002.jpg"
+      ]
+    },
+    {
+      "sha256": "f0ace029364ac2748476ba7214a5a4df82bfb795230e25172535c5c21f08ffa0",
+      "members": [
+        {
+          "image_id": "wheat_stem_rust_Bing_0167.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stem rust"
+        },
+        {
+          "image_id": "wheat_stem_rust_Bing_0247.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stem rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stem_rust_Bing_0167.jpg",
+        "wheat_stem_rust_Bing_0247.jpg"
+      ]
+    },
+    {
+      "sha256": "632d6f3df3b75b11dd8dcff25b29fe6c07abc0e0ff5f14d70cecebeff2b05002",
+      "members": [
+        {
+          "image_id": "wheat_stem_rust_Google_0028.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stem rust"
+        },
+        {
+          "image_id": "wheat_stem_rust_Bing_0070.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stem rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stem_rust_Google_0028.jpg",
+        "wheat_stem_rust_Bing_0070.jpg"
+      ]
+    },
+    {
+      "sha256": "65a9fafecebf0e1070da356d6b11b217a8011b28b2f8ef8a8673564527f0ce9e",
+      "members": [
+        {
+          "image_id": "wheat_stem_rust_Google_0035.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stem rust"
+        },
+        {
+          "image_id": "wheat_stem_rust_Bing_0040.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stem rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stem_rust_Google_0035.jpg",
+        "wheat_stem_rust_Bing_0040.jpg"
+      ]
+    },
+    {
+      "sha256": "4d687de8b34b84a04bbdccfaf2c28b93a768207f9d6c7c74a6178928f322533a",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Baidu_0196.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Baidu_0106.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Baidu_0196.jpg",
+        "wheat_stripe_rust_Baidu_0106.jpg"
+      ]
+    },
+    {
+      "sha256": "26a3d8decebdd0b4571a9a2361fcc75098e3d29ad4f0429253c70a5e399db591",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Baidu_0466.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Baidu_0484.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Baidu_0466.jpg",
+        "wheat_stripe_rust_Baidu_0484.jpg"
+      ]
+    },
+    {
+      "sha256": "8694bb4a710be15ff67f7b346f1ffa0260ff290d870250c2f9168907e3252aa2",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Baidu_0468.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Baidu_0487.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Baidu_0468.jpg",
+        "wheat_stripe_rust_Baidu_0487.jpg"
+      ]
+    },
+    {
+      "sha256": "5b0fd5f952056efb2e2a11fe76d17d978f864fba91c9726ee26d229e061d71bc",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0006.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Google_0029.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0006.jpg",
+        "wheat_stripe_rust_Google_0029.jpg"
+      ]
+    },
+    {
+      "sha256": "3734441d68ad10d0c4cf8f4996b692d0f411d36916448e43425f2170309e16ac",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0029.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0081.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0029.jpg",
+        "wheat_stripe_rust_Bing_0081.jpg"
+      ]
+    },
+    {
+      "sha256": "aaabd96f7ce38b6c3be74d07d30d0e9b46e69520d2651bb7a4a620bebfcf5e27",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0031.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0173.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0031.jpg",
+        "wheat_stripe_rust_Bing_0173.jpg"
+      ]
+    },
+    {
+      "sha256": "d315bc84a837dcbf1dabf310b389cea1c962926ccb2bab142817e4324e501f27",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0095.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0037.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0095.jpg",
+        "wheat_stripe_rust_Bing_0037.jpg"
+      ]
+    },
+    {
+      "sha256": "d81c416816c1f4ccb63254bd890aa15bb49980ca842bb5519cae986f14a43f7c",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0039.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0096.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0039.jpg",
+        "wheat_stripe_rust_Bing_0096.jpg"
+      ]
+    },
+    {
+      "sha256": "02f5215ee7308a1fd3742fe66fd8b76eaa05b576a6df3ce29f328b43999d4038",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0048.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0122.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0048.jpg",
+        "wheat_stripe_rust_Bing_0122.jpg"
+      ]
+    },
+    {
+      "sha256": "b45443b61a582d53141f9398d5a673e2688aa104fd9cbdb487655aa8dcf6834a",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0055.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0137.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0055.jpg",
+        "wheat_stripe_rust_Bing_0137.jpg"
+      ]
+    },
+    {
+      "sha256": "435b525c1c4e295310bc9668054117e788df1f914b606d01484a2b627efda471",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0240.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Bing_0063.jpg",
+          "split": "val",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0240.jpg",
+        "wheat_stripe_rust_Bing_0063.jpg"
+      ]
+    },
+    {
+      "sha256": "737ec51eb3e8581c57a893e0cd1eedb691445d5439d9ea47aae6e6e4d03ee56f",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0145.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Google_0009.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0145.jpg",
+        "wheat_stripe_rust_Google_0009.jpg"
+      ]
+    },
+    {
+      "sha256": "c839cee887b50d6944052f7300b6a9eac7f791f103f1e8f44a22edc84d3706c3",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Google_0123.jpg",
+          "split": "train",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_leaf_rust_Google_0374.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat leaf rust"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "wheat_stripe_rust_Google_0123.jpg",
+        "wheat_leaf_rust_Google_0374.jpg"
+      ]
+    },
+    {
+      "sha256": "757b2b4bd8bb76855e71e2dde98ea5147a08b2bf3960711ac962732ad4907ec1",
+      "members": [
+        {
+          "image_id": "zucchini_bacterial_wilt_Google_0008.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini bacterial wilt"
+        },
+        {
+          "image_id": "zucchini_bacterial_wilt_Bing_0019.jpg",
+          "split": "test",
+          "class_name": "zucchini | zucchini bacterial wilt"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_bacterial_wilt_Google_0008.jpg",
+        "zucchini_bacterial_wilt_Bing_0019.jpg"
+      ]
+    },
+    {
+      "sha256": "3d58c9220063555fb1ffef0e68d7da4b65da9513b3315d1939f2cec80a647b5e",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0007.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Google_0187.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Bing_0007.jpg",
+        "zucchini_powdery_mildew_Google_0187.jpg"
+      ]
+    },
+    {
+      "sha256": "3587cff89745dae113051972f66def0966355db16ab2581a237968957497d161",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0281.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0321.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Bing_0281.jpg",
+        "zucchini_powdery_mildew_Bing_0321.jpg"
+      ]
+    },
+    {
+      "sha256": "7c714bf0f4c9020cee1153645847bd9162bfe4eaa03047baa359f34cdf3067d5",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0282.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0322.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Bing_0282.jpg",
+        "zucchini_powdery_mildew_Bing_0322.jpg"
+      ]
+    },
+    {
+      "sha256": "34625e95a49f574ab0de96ba31e2dc06daa409c5c05ede473d9d371a8431f751",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0283.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0324.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Bing_0283.jpg",
+        "zucchini_powdery_mildew_Bing_0324.jpg"
+      ]
+    },
+    {
+      "sha256": "05695267cc7f3919d4f091389661bdac935b1f922f479fd3abf1d25b4aaa015d",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0297.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0337.jpg",
+          "split": "test",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Bing_0297.jpg",
+        "zucchini_powdery_mildew_Bing_0337.jpg"
+      ]
+    },
+    {
+      "sha256": "bce1a649ba4ed0ce6d5323058be403fbfc2aff7e153efa905119b6aa784fb552",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0298.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0341.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Bing_0298.jpg",
+        "zucchini_powdery_mildew_Bing_0341.jpg"
+      ]
+    },
+    {
+      "sha256": "43bdc888ef48ce5cc711135a7653ba3022d955353f6fe5bf1e738b3fceaf5fca",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0330.jpg",
+          "split": "val",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0289.jpg",
+          "split": "test",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Bing_0330.jpg",
+        "zucchini_powdery_mildew_Bing_0289.jpg"
+      ]
+    },
+    {
+      "sha256": "bae9239b62308122413b86c2d50a6840d263246865f0752e7cd3483236985c77",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0357.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Bing_0336.jpg",
+          "split": "test",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Bing_0357.jpg",
+        "zucchini_powdery_mildew_Bing_0336.jpg"
+      ]
+    },
+    {
+      "sha256": "c990a0e5135acec1a72f4ab9cb584274d92c4d05047018f9bcd6f070490ed7ed",
+      "members": [
+        {
+          "image_id": "zucchini_powdery_mildew_Google_0090.jpg",
+          "split": "train",
+          "class_name": "zucchini | zucchini powdery mildew"
+        },
+        {
+          "image_id": "zucchini_powdery_mildew_Google_0114.jpg",
+          "split": "val",
+          "class_name": "zucchini | zucchini powdery mildew"
+        }
+      ],
+      "cross_split": true,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "zucchini_powdery_mildew_Google_0090.jpg",
+        "zucchini_powdery_mildew_Google_0114.jpg"
+      ]
+    },
+    {
+      "sha256": "675256ba1c19fa8e17d23f324a061cc5fc5797075f49799e7a4116c38c201361",
+      "members": [
+        {
+          "image_id": "banana_black_leaf_streak_Bing_0015.jpg",
+          "split": "test",
+          "class_name": "banana | banana black leaf streak"
+        },
+        {
+          "image_id": "banana_black_leaf_streak_banana black sigatoka (28).jpg",
+          "split": "test",
+          "class_name": "banana | banana black leaf streak"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "banana_black_leaf_streak_Bing_0015.jpg",
+        "banana_black_leaf_streak_banana black sigatoka (28).jpg"
+      ]
+    },
+    {
+      "sha256": "5b9917e50cefe261c95354135ce440ca4dfa8a872285bed27d14f47f368b32a3",
+      "members": [
+        {
+          "image_id": "tomato_early_blight_google_0177.jpg",
+          "split": "test",
+          "class_name": "tomato | tomato early blight"
+        },
+        {
+          "image_id": "tomato_septoria_leaf_spot_google_0081.jpg",
+          "split": "test",
+          "class_name": "tomato | tomato septoria leaf spot"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_early_blight_google_0177.jpg",
+        "tomato_septoria_leaf_spot_google_0081.jpg"
+      ]
+    },
+    {
+      "sha256": "2f1450d764e4d23f1ed986a5ca0fa76f6ec04435d0875ea43bbf5e107b3ce3e3",
+      "members": [
+        {
+          "image_id": "tomato_mosaic_virus_143.jpg",
+          "split": "test",
+          "class_name": "tomato | tomato mosaic virus"
+        },
+        {
+          "image_id": "tomato_yellow_leaf_curl_virus_40.jpg",
+          "split": "test",
+          "class_name": "tomato | tomato yellow leaf curl virus"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": true,
+      "retained_in_model": [
+        "tomato_mosaic_virus_143.jpg",
+        "tomato_yellow_leaf_curl_virus_40.jpg"
+      ]
+    },
+    {
+      "sha256": "f5ba222630daf7ac06d696e8f30cbdb9b509d3ea03eb3f82929299f78d2346c3",
+      "members": [
+        {
+          "image_id": "wheat_head_scab_Baidu_0137.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        },
+        {
+          "image_id": "wheat_head_scab_Baidu_0297.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat head scab"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_head_scab_Baidu_0137.jpg",
+        "wheat_head_scab_Baidu_0297.jpg"
+      ]
+    },
+    {
+      "sha256": "22dcd7b9b029f3159a3ae07680667357e87506e9aa98b8ddd9558e895c5739d6",
+      "members": [
+        {
+          "image_id": "wheat_loose_smut_Bing_0176.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat loose smut"
+        },
+        {
+          "image_id": "wheat_loose_smut_Bing_0203.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat loose smut"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_loose_smut_Bing_0176.jpg",
+        "wheat_loose_smut_Bing_0203.jpg"
+      ]
+    },
+    {
+      "sha256": "46889ac719621de86a96e7458466ac458b0af1b6465395c44cd47196fc08d89f",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (10).jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (113).jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (10).jpg",
+        "wheat_septoria_blotch_blotch (113).jpg"
+      ]
+    },
+    {
+      "sha256": "bac975c570e67610d4ed20f89a28cf9ac51cef0d1d35a07f3d7d0b1e981c833c",
+      "members": [
+        {
+          "image_id": "wheat_septoria_blotch_blotch (12).jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        },
+        {
+          "image_id": "wheat_septoria_blotch_blotch (87).jpg",
+          "split": "test",
+          "class_name": "wheat | wheat septoria blotch"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_septoria_blotch_blotch (12).jpg",
+        "wheat_septoria_blotch_blotch (87).jpg"
+      ]
+    },
+    {
+      "sha256": "38f8012f5629acf3dea05ce9fac17ffe5fd0ef2d2fa0529703c878bd7ab9fda9",
+      "members": [
+        {
+          "image_id": "wheat_stripe_rust_Bing_0002.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stripe rust"
+        },
+        {
+          "image_id": "wheat_stripe_rust_Google_0045.jpg",
+          "split": "test",
+          "class_name": "wheat | wheat stripe rust"
+        }
+      ],
+      "cross_split": false,
+      "conflicting_labels": false,
+      "retained_in_model": [
+        "wheat_stripe_rust_Bing_0002.jpg",
+        "wheat_stripe_rust_Google_0045.jpg"
+      ]
+    }
+  ],
+  "exact_duplicate_group_count": 161,
+  "cross_split_exact_duplicate_group_count": 73,
+  "cross_split_conflicting_label_group_count": 16,
+  "within_split_conflicting_label_group_count": 17,
+  "near_duplicate_threshold": 4,
+  "cross_split_near_duplicate_candidate_count": 122,
+  "near_duplicate_reviewed_pair_count": 142,
+  "near_duplicate_confirmed_pair_count": 140,
+  "near_duplicate_uncertain_pair_count": 0,
+  "near_duplicate_review_sha256": "a7752e4f46d4b6596ade089434068fc0f81acc2c6e9c49275b95dfbf089cb267",
+  "dhash_reviewed_pair_count": 122,
+  "dhash_confirmed_pair_count": 120,
+  "phash_extra_reviewed_pair_count": 20,
+  "phash_extra_confirmed_pair_count": 20,
+  "near_duplicate_exclusions": [],
+  "near_duplicate_overlap_risk_images": [
+    {
+      "image_id": "apple_black_rot_144.jpg",
+      "split": "test",
+      "matching_image_id": "apple_black_rot_6.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "banana_black_leaf_streak_Bing_0073.jpg",
+      "split": "val",
+      "matching_image_id": "banana_black_leaf_streak_Bing_0003.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "banana_black_leaf_streak_banana black sigatoka (42).jpg",
+      "split": "test",
+      "matching_image_id": "banana_black_leaf_streak_Bing_0029.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "banana_black_leaf_streak_banana black sigatoka (55).jpg",
+      "split": "val",
+      "matching_image_id": "banana_black_leaf_streak_Bing_0056.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "banana_cigar_end_rot_Bing_0014.jpg",
+      "split": "test",
+      "matching_image_id": "banana_cigar_end_rot_Bing_0071.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_59.jpg",
+      "split": "val",
+      "matching_image_id": "citrus_canker_252.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_285.jpg",
+      "split": "test",
+      "matching_image_id": "citrus_canker_312.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_early_blight_google_0267.jpg",
+      "split": "test",
+      "matching_image_id": "potato_early_blight_google_0079.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "potato_late_blight_google_0048.jpg",
+      "split": "test",
+      "matching_image_id": "potato_late_blight_3.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_bacterial_blight_Bing_0055.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_bacterial_blight_Bing_0166.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_bacterial_blight_Bing_0066.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_bacterial_blight_Google_0022.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_bacterial_blight_Bing_0049.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_bacterial_blight_Google_0242.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_downy_mildew_Bing_0045.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_downy_mildew_Bing_0006.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_downy_mildew_Bing_0015.jpg",
+      "split": "val",
+      "matching_image_id": "soybean_downy_mildew_Bing_0037.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_downy_mildew_Bing_0023.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_downy_mildew_Bing_0151.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_downy_mildew_Bing_0038.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_downy_mildew_Google_0029.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Bing_0095.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Bing_0024.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Bing_0155.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Bing_0039.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Google_0056.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Bing_0135.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Google_0048.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Bing_0138.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Bing_0031.jpg",
+      "split": "val",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Bing_0186.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Google_0057.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Bing_0186.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_rust_Bing_0055.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_rust_Bing_0023.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "soybean_rust_Bing_0255.jpg",
+      "split": "val",
+      "matching_image_id": "soybean_rust_Bing_0115.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_early_blight_47.jpg",
+      "split": "val",
+      "matching_image_id": "tomato_early_blight_193.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_early_blight_136.jpg",
+      "split": "test",
+      "matching_image_id": "tomato_early_blight_193.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "potato_early_blight_google_0048.jpg",
+      "split": "val",
+      "matching_image_id": "tomato_early_blight_google_0076.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_bacterial_leaf_streak_(black_chaff)_black_chaff (27).jpg",
+      "split": "val",
+      "matching_image_id": "wheat_bacterial_leaf_streak_(black_chaff)_black_chaff (6).jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_head_scab_Bing_0111.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_head_scab_Bing_0009.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_head_scab_Google_0309.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_head_scab_Bing_0214.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_leaf_rust_Google_0040.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_leaf_rust_Bing_0015.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_loose_smut_Bing_0097.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_loose_smut_Bing_0011.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "wheat_loose_smut_Bing_0000.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_loose_smut_Bing_0077.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_loose_smut_Google_0081.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_loose_smut_Bing_0200.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_powdery_mildew_Baidu_0022.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_powdery_mildew_Baidu_0178.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_powdery_mildew_Bing_0096.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_powdery_mildew_Bing_0021.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_powdery_mildew_Google_0101.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_powdery_mildew_Bing_0106.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_powdery_mildew_Bing_0023.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_powdery_mildew_Bing_0127.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_powdery_mildew_Bing_0172.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_powdery_mildew_Bing_0136.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_septoria_blotch_google_septoria (5).jpg",
+      "split": "val",
+      "matching_image_id": "wheat_septoria_blotch_Bing_0043.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_septoria_blotch_blotch (55).jpg",
+      "split": "val",
+      "matching_image_id": "wheat_septoria_blotch_blotch (73).jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stem_rust_Bing_0206.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stem_rust_Bing_0013.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stem_rust_Bing_0007.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_stem_rust_Bing_0013.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stem_rust_Baidu_0003.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stem_rust_Bing_0065.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stem_rust_Bing_0076.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_stem_rust_Bing_0065.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stem_rust_Bing_0016.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stem_rust_Bing_0136.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_bacterial_leaf_streak_(black_chaff)_black_chaff (25).jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stripe_rust_Bing_0130.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stripe_rust_Google_0223.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stripe_rust_Bing_0263.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "zucchini_powdery_mildew_Bing_0015.jpg",
+      "split": "val",
+      "matching_image_id": "zucchini_powdery_mildew_Bing_0036.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "zucchini_powdery_mildew_Bing_0002.jpg",
+      "split": "test",
+      "matching_image_id": "zucchini_powdery_mildew_Bing_0037.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "zucchini_powdery_mildew_Bing_0052.jpg",
+      "split": "test",
+      "matching_image_id": "zucchini_powdery_mildew_Bing_0097.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "zucchini_powdery_mildew_Bing_0109.jpg",
+      "split": "test",
+      "matching_image_id": "zucchini_powdery_mildew_Bing_0140.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "zucchini_powdery_mildew_Bing_0183.jpg",
+      "split": "val",
+      "matching_image_id": "zucchini_powdery_mildew_Bing_0140.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "zucchini_powdery_mildew_Bing_0004.jpg",
+      "split": "test",
+      "matching_image_id": "zucchini_powdery_mildew_Bing_0282.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "apple_scab_66.jpg",
+      "split": "test",
+      "matching_image_id": "apple_black_rot_1.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "banana_black_leaf_streak_banana black sigatoka (15).jpg",
+      "split": "val",
+      "matching_image_id": "banana_panama_disease_google_0062.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_90.jpg",
+      "split": "test",
+      "matching_image_id": "citrus_canker_441.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "soybean_bacterial_blight_Bing_0172.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_bacterial_blight_Bing_0056.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_brown_spot_Bing_0090.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_brown_spot_Bing_0021.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "soybean_mosaic_Bing_0062.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_mosaic_Bing_0226.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "soybean_rust_Bing_0074.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_rust_Bing_0014.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_early_blight_google_0059.jpg",
+      "split": "test",
+      "matching_image_id": "tomato_early_blight_google_0347.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_septoria_leaf_spot_google_0070.jpg",
+      "split": "test",
+      "matching_image_id": "tomato_early_blight_google_0347.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_bacterial_leaf_spot_78.jpg",
+      "split": "test",
+      "matching_image_id": "tomato_septoria_leaf_spot_174.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_head_scab_Baidu_0369.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_head_scab_Baidu_0176.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_loose_smut_Google_0061.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_loose_smut_Bing_0025.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_powdery_mildew_Baidu_0000.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_powdery_mildew_Baidu_0186.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_septoria_blotch_blotch (20).jpg",
+      "split": "val",
+      "matching_image_id": "wheat_septoria_blotch_Bing_0031.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_septoria_blotch_blotch (16).jpg",
+      "split": "val",
+      "matching_image_id": "wheat_septoria_blotch_blotch (66).jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_bacterial_leaf_streak_(black_chaff)_Bing_0004.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_septoria_blotch_blotch (82).jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stem_rust_Google_0071.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stem_rust_Bing_0173.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stripe_rust_Baidu_0120.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stripe_rust_Baidu_0456.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stripe_rust_Bing_0082.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_stripe_rust_Bing_0001.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "zucchini_powdery_mildew_Bing_0203.jpg",
+      "split": "val",
+      "matching_image_id": "zucchini_powdery_mildew_Bing_0075.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "banana_bunchy_top_Google_0159.jpg",
+      "split": "val",
+      "matching_image_id": "banana_bunchy_top_Bing_0141.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_37.jpg",
+      "split": "val",
+      "matching_image_id": "citrus_canker_225.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_107.jpg",
+      "split": "test",
+      "matching_image_id": "citrus_canker_399.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_371.jpg",
+      "split": "val",
+      "matching_image_id": "citrus_canker_412.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_rust_Bing_0022.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_bacterial_blight_Baidu_0033.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_downy_mildew_Google_0019.jpg",
+      "split": "val",
+      "matching_image_id": "soybean_downy_mildew_Bing_0065.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Google_0054.jpg",
+      "split": "val",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Bing_0018.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Bing_0047.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Bing_0018.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_mosaic_Bing_0112.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_mosaic_Bing_0140.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_rust_Bing_0032.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_rust_Bing_0053.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_early_blight_173.jpg",
+      "split": "test",
+      "matching_image_id": "tomato_early_blight_28.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "wheat_head_scab_Baidu_0431.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_head_scab_Baidu_0468.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_head_scab_Bing_0319.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_head_scab_Bing_0269.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_head_scab_Bing_0287.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_head_scab_Bing_0269.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_powdery_mildew_Baidu_0049.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_powdery_mildew_Baidu_0194.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stripe_rust_Baidu_0317.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stripe_rust_Baidu_0165.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "banana_black_leaf_streak_Baidu_0002.jpg",
+      "split": "val",
+      "matching_image_id": "banana_black_leaf_streak_banana black sigatoka (23).jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "banana_panama_disease_109.jpg",
+      "split": "val",
+      "matching_image_id": "banana_panama_disease_25.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_202.jpg",
+      "split": "val",
+      "matching_image_id": "citrus_canker_169.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "soybean_mosaic_Bing_0217.jpg",
+      "split": "val",
+      "matching_image_id": "soybean_mosaic_Bing_0182.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_septoria_leaf_spot_243.jpg",
+      "split": "test",
+      "matching_image_id": "tomato_early_blight_210.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_loose_smut_Bing_0004.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_loose_smut_Bing_0092.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_60.jpg",
+      "split": "test",
+      "matching_image_id": "citrus_canker_17.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "soybean_downy_mildew_Bing_0078.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_downy_mildew_Google_0114.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_early_blight_google_0291.jpg",
+      "split": "test",
+      "matching_image_id": "tomato_early_blight_google_0032.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "tomato_early_blight_62.jpg",
+      "split": "test",
+      "matching_image_id": "tomato_early_blight_google_0032.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_powdery_mildew_Bing_0170.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_powdery_mildew_Bing_0004.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "zucchini_downy_mildew_Bing_0003.jpg",
+      "split": "val",
+      "matching_image_id": "zucchini_downy_mildew_Bing_0105.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "potato_early_blight_google_0018.jpg",
+      "split": "test",
+      "matching_image_id": "potato_early_blight_google_0081.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "potato_early_blight_google_0004.jpg",
+      "split": "test",
+      "matching_image_id": "potato_early_blight_google_0345.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "soybean_frog_eye_leaf_spot_Bing_0012.jpg",
+      "split": "test",
+      "matching_image_id": "soybean_frog_eye_leaf_spot_Google_0135.jpg",
+      "matching_split": "val"
+    },
+    {
+      "image_id": "wheat_stripe_rust_Bing_0094.jpg",
+      "split": "val",
+      "matching_image_id": "wheat_stripe_rust_Google_0010.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_163.jpg",
+      "split": "test",
+      "matching_image_id": "citrus_canker_288.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stripe_rust_Google_0148.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stripe_rust_Bing_0162.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_bacterial_leaf_streak_(black_chaff)_black_chaff (10).jpg",
+      "split": "test",
+      "matching_image_id": "wheat_bacterial_leaf_streak_(black_chaff)_Bing_0008.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "corn_northern_leaf_blight_google_0003.jpg",
+      "split": "val",
+      "matching_image_id": "corn_northern_leaf_blight_google_0163.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "wheat_stem_rust_Baidu_0127.jpg",
+      "split": "test",
+      "matching_image_id": "wheat_stem_rust_Baidu_0252.jpg",
+      "matching_split": "train"
+    },
+    {
+      "image_id": "citrus_canker_255.jpg",
+      "split": "test",
+      "matching_image_id": "citrus_canker_323.jpg",
+      "matching_split": "train"
+    }
+  ],
+  "near_duplicate_note": "64-bit dHash and pHash generated candidate pairs; visual decisions were recorded. All readable images remain in their original splits, including confirmed cross-split copies. Validation and test scores may therefore be optimistic.",
+  "train_class_min": 19,
+  "train_class_max": 225,
+  "train_imbalance_ratio": 11.842105263157896,
+  "exclusion_rule": "Use every readable image in its supplied train, validation, or test split. No duplicate-based exclusions or split reassignments are applied. This preserves the supplied split assignments but retains same-photo overlap across partitions.",
+  "duplicate_policy": "original_splits_no_duplicate_exclusions"
+}

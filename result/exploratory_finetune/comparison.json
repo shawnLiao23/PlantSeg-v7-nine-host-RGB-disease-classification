@@ -1,0 +1,51 @@
+{
+  "label": "supplementary post-final comparison; extension was not blind to earlier test results",
+  "test_split_unchanged": true,
+  "sample_count": 867,
+  "original_model": "weighted_resnet18",
+  "finetune_model": "layer4 plus head, epoch 10 checkpoint",
+  "metrics": {
+    "macro_f1": {
+      "original": 0.6317438195915875,
+      "finetune": 0.6628694942563158,
+      "change": 0.031125674664728264
+    },
+    "accuracy": {
+      "original": 0.6689734717416378,
+      "finetune": 0.7093425605536332,
+      "change": 0.04036908881199541
+    },
+    "balanced_accuracy": {
+      "original": 0.6444200098599939,
+      "finetune": 0.6568272527182557,
+      "change": 0.01240724285826178
+    }
+  },
+  "finetune_only_correct": 71,
+  "original_only_correct": 36,
+  "paired_stratified_bootstrap": {
+    "seed": 2026,
+    "replicates": 3000,
+    "macro_f1_change_95_percent_interval": [
+      0.004667820311676446,
+      0.05525422588264583
+    ],
+    "interpretation": "Descriptive only: prior test visibility and duplicate overlap limit inference"
+  },
+  "largest_class_gains": [
+    "tomato | tomato early blight",
+    "wheat | wheat bacterial leaf streak (black chaff)",
+    "soybean | soybean bacterial blight",
+    "apple | apple rust",
+    "potato | potato early blight"
+  ],
+  "largest_class_losses": [
+    "zucchini | zucchini downy mildew",
+    "apple | apple black rot",
+    "banana | banana bunchy top",
+    "zucchini | zucchini yellow mosaic virus",
+    "zucchini | zucchini bacterial wilt"
+  ],
+  "original_predictions_sha256": "1103aae78cf815761bfe2024196e9658fe18caa0247935be44b67a8bd17aa15c",
+  "finetune_predictions_sha256": "02dc98ba365ae843a03c818a69c969b6293a407a6d2a727e0756d3e53533ae11"
+}

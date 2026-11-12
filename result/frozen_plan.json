@@ -1,0 +1,14 @@
+{
+  "selected_model": "weighted_resnet18",
+  "selection_metric": "validation macro-F1",
+  "summary_sha256": "7b3c8b6df0732ced98dc3d216b0eb056684234550e060cb50d1107bf2b3a4e06",
+  "experiments": [
+    "majority_class",
+    "baseline_resnet18",
+    "augmentation_resnet18",
+    "weighted_resnet18"
+  ],
+  "manifest_sha256": "1ff6ddeb4bf02e573b4ebd6242daf195a86917b9316fa5a493cd1c217562574e",
+  "class_mapping_sha256": "d7fed729fb9e1fa08a8e020569c3c7da897569eb31f2dd5c5e1350ca558d0c04",
+  "test_used_for_selection": false
+}

@@ -1,0 +1,21 @@
+image_a,split_a,class_a,image_b,split_b,class_b,phash_distance,dhash_distance
+potato_early_blight_google_0081.jpg,train,potato | potato early blight,potato_early_blight_google_0018.jpg,test,potato | potato early blight,0,8
+citrus_canker_google_0037.jpg,train,citrus | citrus canker,citrus_canker_37.jpg,val,citrus | citrus canker,2,6
+potato_early_blight_google_0345.jpg,val,potato | potato early blight,potato_early_blight_google_0004.jpg,test,potato | potato early blight,2,8
+soybean_frog_eye_leaf_spot_Google_0135.jpg,val,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Bing_0012.jpg,test,soybean | soybean frog eye leaf spot,4,5
+wheat_stripe_rust_Google_0010.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Bing_0094.jpg,val,wheat | wheat stripe rust,4,6
+citrus_canker_288.jpg,train,citrus | citrus canker,citrus_canker_163.jpg,test,citrus | citrus canker,4,14
+citrus_canker_233.jpg,train,citrus | citrus canker,citrus_canker_202.jpg,val,citrus | citrus canker,6,6
+tomato_septoria_leaf_spot_google_0050.jpg,train,tomato | tomato septoria leaf spot,tomato_early_blight_google_0291.jpg,test,tomato | tomato early blight,6,6
+tomato_early_blight_29.jpg,train,tomato | tomato early blight,tomato_septoria_leaf_spot_243.jpg,test,tomato | tomato septoria leaf spot,6,7
+wheat_stripe_rust_Bing_0162.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Google_0148.jpg,test,wheat | wheat stripe rust,6,7
+tomato_septoria_leaf_spot_google_0050.jpg,train,tomato | tomato septoria leaf spot,tomato_early_blight_62.jpg,test,tomato | tomato early blight,6,10
+tomato_early_blight_google_0101.jpg,train,tomato | tomato early blight,potato_early_blight_google_0018.jpg,test,potato | potato early blight,6,11
+wheat_bacterial_leaf_streak_(black_chaff)_Bing_0008.jpg,train,wheat | wheat bacterial leaf streak (black chaff),wheat_bacterial_leaf_streak_(black_chaff)_black_chaff (10).jpg,test,wheat | wheat bacterial leaf streak (black chaff),6,11
+corn_northern_leaf_blight_google_0163.jpg,train,corn | corn northern leaf blight,corn_northern_leaf_blight_google_0003.jpg,val,corn | corn northern leaf blight,8,5
+wheat_stem_rust_Baidu_0252.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Baidu_0127.jpg,test,wheat | wheat stem rust,8,5
+tomato_early_blight_193.jpg,train,tomato | tomato early blight,tomato_early_blight_136.jpg,test,tomato | tomato early blight,8,8
+tomato_early_blight_47.jpg,val,tomato | tomato early blight,tomato_early_blight_136.jpg,test,tomato | tomato early blight,8,8
+soybean_frog_eye_leaf_spot_Bing_0018.jpg,train,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Bing_0047.jpg,test,soybean | soybean frog eye leaf spot,8,9
+citrus_canker_323.jpg,train,citrus | citrus canker,citrus_canker_255.jpg,test,citrus | citrus canker,8,11
+citrus_canker_44.jpg,train,citrus | citrus canker,citrus_canker_255.jpg,test,citrus | citrus canker,8,15

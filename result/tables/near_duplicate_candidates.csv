@@ -1,0 +1,123 @@
+image_a,split_a,class_a,image_b,split_b,class_b,hamming_distance
+apple_black_rot_6.jpg,train,apple | apple black rot,apple_black_rot_144.jpg,test,apple | apple black rot,0
+banana_black_leaf_streak_Bing_0003.jpg,train,banana | banana black leaf streak,banana_black_leaf_streak_Bing_0073.jpg,val,banana | banana black leaf streak,0
+banana_black_leaf_streak_Bing_0029.jpg,train,banana | banana black leaf streak,banana_black_leaf_streak_banana black sigatoka (42).jpg,test,banana | banana black leaf streak,0
+banana_black_leaf_streak_Bing_0056.jpg,train,banana | banana black leaf streak,banana_black_leaf_streak_banana black sigatoka (55).jpg,val,banana | banana black leaf streak,0
+banana_black_leaf_streak_banana black sigatoka (9).jpg,train,banana | banana black leaf streak,banana_black_leaf_streak_banana black sigatoka (55).jpg,val,banana | banana black leaf streak,0
+banana_cigar_end_rot_Bing_0071.jpg,train,banana | banana cigar end rot,banana_cigar_end_rot_Bing_0014.jpg,test,banana | banana cigar end rot,0
+citrus_canker_252.jpg,train,citrus | citrus canker,citrus_canker_59.jpg,val,citrus | citrus canker,0
+citrus_canker_312.jpg,train,citrus | citrus canker,citrus_canker_285.jpg,test,citrus | citrus canker,0
+potato_early_blight_google_0079.jpg,train,potato | potato early blight,tomato_early_blight_google_0267.jpg,test,tomato | tomato early blight,0
+potato_late_blight_3.jpg,train,potato | potato late blight,potato_late_blight_google_0048.jpg,test,potato | potato late blight,0
+soybean_bacterial_blight_Bing_0166.jpg,train,soybean | soybean bacterial blight,soybean_bacterial_blight_Bing_0055.jpg,test,soybean | soybean bacterial blight,0
+soybean_bacterial_blight_Google_0022.jpg,train,soybean | soybean bacterial blight,soybean_bacterial_blight_Bing_0066.jpg,test,soybean | soybean bacterial blight,0
+soybean_bacterial_blight_Google_0242.jpg,train,soybean | soybean bacterial blight,soybean_bacterial_blight_Bing_0049.jpg,test,soybean | soybean bacterial blight,0
+soybean_downy_mildew_Bing_0006.jpg,train,soybean | soybean downy mildew,soybean_downy_mildew_Bing_0045.jpg,test,soybean | soybean downy mildew,0
+soybean_downy_mildew_Bing_0037.jpg,train,soybean | soybean downy mildew,soybean_downy_mildew_Bing_0015.jpg,val,soybean | soybean downy mildew,0
+soybean_downy_mildew_Bing_0151.jpg,train,soybean | soybean downy mildew,soybean_downy_mildew_Bing_0023.jpg,test,soybean | soybean downy mildew,0
+soybean_downy_mildew_Google_0029.jpg,train,soybean | soybean downy mildew,soybean_downy_mildew_Bing_0038.jpg,test,soybean | soybean downy mildew,0
+soybean_frog_eye_leaf_spot_Bing_0024.jpg,train,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Bing_0095.jpg,test,soybean | soybean frog eye leaf spot,0
+soybean_frog_eye_leaf_spot_Bing_0039.jpg,train,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Bing_0155.jpg,test,soybean | soybean frog eye leaf spot,0
+soybean_frog_eye_leaf_spot_Bing_0135.jpg,train,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Google_0056.jpg,test,soybean | soybean frog eye leaf spot,0
+soybean_frog_eye_leaf_spot_Bing_0138.jpg,train,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Google_0048.jpg,test,soybean | soybean frog eye leaf spot,0
+soybean_frog_eye_leaf_spot_Bing_0186.jpg,train,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Bing_0031.jpg,val,soybean | soybean frog eye leaf spot,0
+soybean_rust_Bing_0023.jpg,val,soybean | soybean rust,soybean_rust_Bing_0055.jpg,test,soybean | soybean rust,0
+soybean_rust_Bing_0115.jpg,train,soybean | soybean rust,soybean_rust_Bing_0255.jpg,val,soybean | soybean rust,0
+tomato_early_blight_193.jpg,train,tomato | tomato early blight,tomato_early_blight_47.jpg,val,tomato | tomato early blight,0
+tomato_early_blight_google_0076.jpg,train,tomato | tomato early blight,potato_early_blight_google_0048.jpg,val,potato | potato early blight,0
+wheat_bacterial_leaf_streak_(black_chaff)_black_chaff (6).jpg,train,wheat | wheat bacterial leaf streak (black chaff),wheat_bacterial_leaf_streak_(black_chaff)_black_chaff (27).jpg,val,wheat | wheat bacterial leaf streak (black chaff),0
+wheat_head_scab_Bing_0009.jpg,train,wheat | wheat head scab,wheat_head_scab_Bing_0111.jpg,test,wheat | wheat head scab,0
+wheat_head_scab_Bing_0214.jpg,train,wheat | wheat head scab,wheat_head_scab_Google_0309.jpg,test,wheat | wheat head scab,0
+wheat_leaf_rust_Bing_0015.jpg,train,wheat | wheat leaf rust,wheat_leaf_rust_Google_0040.jpg,test,wheat | wheat leaf rust,0
+wheat_loose_smut_Bing_0011.jpg,val,wheat | wheat loose smut,wheat_loose_smut_Bing_0097.jpg,test,wheat | wheat loose smut,0
+wheat_loose_smut_Bing_0197.jpg,train,wheat | wheat loose smut,wheat_loose_smut_Bing_0000.jpg,val,wheat | wheat loose smut,0
+wheat_loose_smut_Bing_0200.jpg,train,wheat | wheat loose smut,wheat_loose_smut_Google_0081.jpg,test,wheat | wheat loose smut,0
+wheat_loose_smut_Bing_0228.jpg,train,wheat | wheat loose smut,wheat_loose_smut_Google_0081.jpg,test,wheat | wheat loose smut,0
+wheat_loose_smut_Google_0007.jpg,train,wheat | wheat loose smut,wheat_loose_smut_Bing_0000.jpg,val,wheat | wheat loose smut,0
+wheat_powdery_mildew_Baidu_0178.jpg,train,wheat | wheat powdery mildew,wheat_powdery_mildew_Baidu_0022.jpg,val,wheat | wheat powdery mildew,0
+wheat_powdery_mildew_Bing_0021.jpg,train,wheat | wheat powdery mildew,wheat_powdery_mildew_Bing_0096.jpg,val,wheat | wheat powdery mildew,0
+wheat_powdery_mildew_Bing_0106.jpg,train,wheat | wheat powdery mildew,wheat_powdery_mildew_Google_0101.jpg,test,wheat | wheat powdery mildew,0
+wheat_powdery_mildew_Bing_0127.jpg,train,wheat | wheat powdery mildew,wheat_powdery_mildew_Bing_0023.jpg,test,wheat | wheat powdery mildew,0
+wheat_powdery_mildew_Bing_0136.jpg,train,wheat | wheat powdery mildew,wheat_powdery_mildew_Bing_0172.jpg,val,wheat | wheat powdery mildew,0
+wheat_powdery_mildew_Google_0016.jpg,train,wheat | wheat powdery mildew,wheat_powdery_mildew_Bing_0023.jpg,test,wheat | wheat powdery mildew,0
+wheat_septoria_blotch_Bing_0043.jpg,train,wheat | wheat septoria blotch,wheat_septoria_blotch_google_septoria (5).jpg,val,wheat | wheat septoria blotch,0
+wheat_septoria_blotch_blotch (42).jpg,train,wheat | wheat septoria blotch,wheat_septoria_blotch_google_septoria (5).jpg,val,wheat | wheat septoria blotch,0
+wheat_septoria_blotch_blotch (73).jpg,train,wheat | wheat septoria blotch,wheat_septoria_blotch_blotch (55).jpg,val,wheat | wheat septoria blotch,0
+wheat_stem_rust_Bing_0007.jpg,val,wheat | wheat stem rust,wheat_stem_rust_Bing_0206.jpg,test,wheat | wheat stem rust,0
+wheat_stem_rust_Bing_0013.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Bing_0007.jpg,val,wheat | wheat stem rust,0
+wheat_stem_rust_Bing_0013.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Bing_0206.jpg,test,wheat | wheat stem rust,0
+wheat_stem_rust_Bing_0076.jpg,val,wheat | wheat stem rust,wheat_stem_rust_Baidu_0003.jpg,test,wheat | wheat stem rust,0
+wheat_stem_rust_Bing_0136.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Bing_0016.jpg,test,wheat | wheat stem rust,0
+wheat_stem_rust_Bing_0197.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Baidu_0003.jpg,test,wheat | wheat stem rust,0
+wheat_stem_rust_Bing_0197.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Bing_0076.jpg,val,wheat | wheat stem rust,0
+wheat_stem_rust_Google_0052.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Bing_0007.jpg,val,wheat | wheat stem rust,0
+wheat_stem_rust_Google_0052.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Bing_0206.jpg,test,wheat | wheat stem rust,0
+wheat_stripe_rust_Bing_0130.jpg,train,wheat | wheat stripe rust,wheat_bacterial_leaf_streak_(black_chaff)_black_chaff (25).jpg,test,wheat | wheat bacterial leaf streak (black chaff),0
+wheat_stripe_rust_Bing_0263.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Google_0223.jpg,test,wheat | wheat stripe rust,0
+zucchini_powdery_mildew_Bing_0036.jpg,train,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0015.jpg,val,zucchini | zucchini powdery mildew,0
+zucchini_powdery_mildew_Bing_0037.jpg,train,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0002.jpg,test,zucchini | zucchini powdery mildew,0
+zucchini_powdery_mildew_Bing_0097.jpg,train,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0052.jpg,test,zucchini | zucchini powdery mildew,0
+zucchini_powdery_mildew_Bing_0140.jpg,train,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0109.jpg,test,zucchini | zucchini powdery mildew,0
+zucchini_powdery_mildew_Bing_0140.jpg,train,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0183.jpg,val,zucchini | zucchini powdery mildew,0
+zucchini_powdery_mildew_Bing_0183.jpg,val,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0109.jpg,test,zucchini | zucchini powdery mildew,0
+zucchini_powdery_mildew_Bing_0282.jpg,train,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0004.jpg,test,zucchini | zucchini powdery mildew,0
+zucchini_powdery_mildew_Bing_0322.jpg,train,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0004.jpg,test,zucchini | zucchini powdery mildew,0
+apple_black_rot_1.jpg,train,apple | apple black rot,apple_scab_66.jpg,test,apple | apple scab,1
+apple_rust_google_0013.jpg,val,apple | apple rust,wheat_leaf_rust_Google_0339.jpg,test,wheat | wheat leaf rust,1
+banana_panama_disease_google_0062.jpg,train,banana | banana panama disease,banana_black_leaf_streak_banana black sigatoka (15).jpg,val,banana | banana black leaf streak,1
+citrus_canker_441.jpg,val,citrus | citrus canker,citrus_canker_90.jpg,test,citrus | citrus canker,1
+soybean_bacterial_blight_Bing_0056.jpg,train,soybean | soybean bacterial blight,soybean_bacterial_blight_Bing_0172.jpg,test,soybean | soybean bacterial blight,1
+soybean_brown_spot_Bing_0021.jpg,val,soybean | soybean brown spot,soybean_brown_spot_Bing_0090.jpg,test,soybean | soybean brown spot,1
+soybean_downy_mildew_Google_0007.jpg,train,soybean | soybean downy mildew,soybean_downy_mildew_Bing_0045.jpg,test,soybean | soybean downy mildew,1
+soybean_frog_eye_leaf_spot_Bing_0031.jpg,val,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Google_0057.jpg,test,soybean | soybean frog eye leaf spot,1
+soybean_frog_eye_leaf_spot_Bing_0186.jpg,train,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Google_0057.jpg,test,soybean | soybean frog eye leaf spot,1
+soybean_mosaic_Bing_0226.jpg,val,soybean | soybean mosaic,soybean_mosaic_Bing_0062.jpg,test,soybean | soybean mosaic,1
+soybean_rust_Bing_0014.jpg,train,soybean | soybean rust,soybean_rust_Bing_0074.jpg,test,soybean | soybean rust,1
+tomato_early_blight_google_0347.jpg,train,tomato | tomato early blight,tomato_early_blight_google_0059.jpg,test,tomato | tomato early blight,1
+tomato_early_blight_google_0347.jpg,train,tomato | tomato early blight,tomato_septoria_leaf_spot_google_0070.jpg,test,tomato | tomato septoria leaf spot,1
+tomato_septoria_leaf_spot_174.jpg,train,tomato | tomato septoria leaf spot,tomato_bacterial_leaf_spot_78.jpg,test,tomato | tomato bacterial leaf spot,1
+wheat_head_scab_Baidu_0176.jpg,train,wheat | wheat head scab,wheat_head_scab_Baidu_0369.jpg,val,wheat | wheat head scab,1
+wheat_loose_smut_Bing_0025.jpg,train,wheat | wheat loose smut,wheat_loose_smut_Google_0061.jpg,val,wheat | wheat loose smut,1
+wheat_powdery_mildew_Baidu_0186.jpg,train,wheat | wheat powdery mildew,wheat_powdery_mildew_Baidu_0000.jpg,val,wheat | wheat powdery mildew,1
+wheat_septoria_blotch_Bing_0031.jpg,train,wheat | wheat septoria blotch,wheat_septoria_blotch_blotch (20).jpg,val,wheat | wheat septoria blotch,1
+wheat_septoria_blotch_blotch (66).jpg,train,wheat | wheat septoria blotch,wheat_septoria_blotch_blotch (16).jpg,val,wheat | wheat septoria blotch,1
+wheat_septoria_blotch_blotch (82).jpg,train,wheat | wheat septoria blotch,wheat_bacterial_leaf_streak_(black_chaff)_Bing_0004.jpg,test,wheat | wheat bacterial leaf streak (black chaff),1
+wheat_stem_rust_Bing_0173.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Google_0071.jpg,test,wheat | wheat stem rust,1
+wheat_stripe_rust_Baidu_0456.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Baidu_0120.jpg,test,wheat | wheat stripe rust,1
+wheat_stripe_rust_Bing_0001.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Bing_0082.jpg,val,wheat | wheat stripe rust,1
+zucchini_powdery_mildew_Bing_0075.jpg,train,zucchini | zucchini powdery mildew,zucchini_powdery_mildew_Bing_0203.jpg,val,zucchini | zucchini powdery mildew,1
+banana_bunchy_top_Bing_0141.jpg,train,banana | banana bunchy top,banana_bunchy_top_Google_0159.jpg,val,banana | banana bunchy top,2
+banana_bunchy_top_Bing_0347.jpg,train,banana | banana bunchy top,banana_bunchy_top_Google_0159.jpg,val,banana | banana bunchy top,2
+citrus_canker_225.jpg,train,citrus | citrus canker,citrus_canker_37.jpg,val,citrus | citrus canker,2
+citrus_canker_399.jpg,train,citrus | citrus canker,citrus_canker_107.jpg,test,citrus | citrus canker,2
+citrus_canker_412.jpg,train,citrus | citrus canker,citrus_canker_371.jpg,val,citrus | citrus canker,2
+soybean_bacterial_blight_Baidu_0033.jpg,train,soybean | soybean bacterial blight,soybean_rust_Bing_0022.jpg,test,soybean | soybean rust,2
+soybean_downy_mildew_Bing_0065.jpg,train,soybean | soybean downy mildew,soybean_downy_mildew_Google_0019.jpg,val,soybean | soybean downy mildew,2
+soybean_frog_eye_leaf_spot_Bing_0018.jpg,train,soybean | soybean frog eye leaf spot,soybean_frog_eye_leaf_spot_Google_0054.jpg,val,soybean | soybean frog eye leaf spot,2
+soybean_mosaic_Bing_0140.jpg,train,soybean | soybean mosaic,soybean_mosaic_Bing_0112.jpg,test,soybean | soybean mosaic,2
+soybean_rust_Bing_0053.jpg,train,soybean | soybean rust,soybean_rust_Bing_0032.jpg,test,soybean | soybean rust,2
+tomato_early_blight_28.jpg,val,tomato | tomato early blight,tomato_early_blight_173.jpg,test,tomato | tomato early blight,2
+wheat_head_scab_Baidu_0468.jpg,train,wheat | wheat head scab,wheat_head_scab_Baidu_0431.jpg,test,wheat | wheat head scab,2
+wheat_head_scab_Bing_0269.jpg,train,wheat | wheat head scab,wheat_head_scab_Bing_0319.jpg,test,wheat | wheat head scab,2
+wheat_loose_smut_Bing_0077.jpg,train,wheat | wheat loose smut,wheat_loose_smut_Bing_0000.jpg,val,wheat | wheat loose smut,2
+wheat_powdery_mildew_Baidu_0194.jpg,train,wheat | wheat powdery mildew,wheat_powdery_mildew_Baidu_0049.jpg,test,wheat | wheat powdery mildew,2
+wheat_stem_rust_Bing_0065.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Baidu_0003.jpg,test,wheat | wheat stem rust,2
+wheat_stem_rust_Bing_0065.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Bing_0076.jpg,val,wheat | wheat stem rust,2
+wheat_stripe_rust_Baidu_0165.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Baidu_0317.jpg,test,wheat | wheat stripe rust,2
+banana_black_leaf_streak_banana black sigatoka (23).jpg,train,banana | banana black leaf streak,banana_black_leaf_streak_Baidu_0002.jpg,val,banana | banana black leaf streak,3
+banana_panama_disease_25.jpg,train,banana | banana panama disease,banana_panama_disease_109.jpg,val,banana | banana panama disease,3
+citrus_canker_169.jpg,train,citrus | citrus canker,citrus_canker_202.jpg,val,citrus | citrus canker,3
+citrus_canker_382.jpg,train,citrus | citrus canker,citrus_canker_202.jpg,val,citrus | citrus canker,3
+soybean_mosaic_Bing_0182.jpg,train,soybean | soybean mosaic,soybean_mosaic_Bing_0217.jpg,val,soybean | soybean mosaic,3
+tomato_early_blight_210.jpg,train,tomato | tomato early blight,tomato_septoria_leaf_spot_243.jpg,test,tomato | tomato septoria leaf spot,3
+wheat_loose_smut_Bing_0092.jpg,train,wheat | wheat loose smut,wheat_loose_smut_Bing_0004.jpg,test,wheat | wheat loose smut,3
+wheat_stem_rust_Google_0312.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Baidu_0003.jpg,test,wheat | wheat stem rust,3
+wheat_stem_rust_Google_0312.jpg,train,wheat | wheat stem rust,wheat_stem_rust_Bing_0076.jpg,val,wheat | wheat stem rust,3
+wheat_stripe_rust_Baidu_0359.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Baidu_0317.jpg,test,wheat | wheat stripe rust,3
+citrus_canker_17.jpg,val,citrus | citrus canker,citrus_canker_60.jpg,test,citrus | citrus canker,4
+soybean_downy_mildew_Google_0114.jpg,train,soybean | soybean downy mildew,soybean_downy_mildew_Bing_0078.jpg,test,soybean | soybean downy mildew,4
+tomato_bacterial_leaf_spot_google_0315.jpg,train,tomato | tomato bacterial leaf spot,wheat_leaf_rust_Google_0339.jpg,test,wheat | wheat leaf rust,4
+tomato_early_blight_google_0032.jpg,train,tomato | tomato early blight,tomato_early_blight_google_0291.jpg,test,tomato | tomato early blight,4
+wheat_head_scab_Bing_0269.jpg,train,wheat | wheat head scab,wheat_head_scab_Bing_0287.jpg,test,wheat | wheat head scab,4
+wheat_powdery_mildew_Bing_0004.jpg,val,wheat | wheat powdery mildew,wheat_powdery_mildew_Bing_0170.jpg,test,wheat | wheat powdery mildew,4
+zucchini_downy_mildew_Bing_0105.jpg,train,zucchini | zucchini downy mildew,zucchini_downy_mildew_Bing_0003.jpg,val,zucchini | zucchini downy mildew,4

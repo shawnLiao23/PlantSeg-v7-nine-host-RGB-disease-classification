@@ -1,0 +1,28 @@
+{
+  "status": "post-final validation-only exploration; do not use for frozen final test",
+  "stage": "continued from best pilot with freshly initialized Adam optimizer",
+  "initial_checkpoint": "exploratory_finetune/best_validation.pth",
+  "initial_checkpoint_sha256": "7850b5f61fc5d06bdacb55cb68039f3941288b402dd083c4f41eaad359f40e50",
+  "initial_validation": {
+    "macro_f1": 0.663816203045368,
+    "accuracy": 0.7073684210526315,
+    "balanced_accuracy": 0.6670221557308462
+  },
+  "manifest_sha256": "1ff6ddeb4bf02e573b4ebd6242daf195a86917b9316fa5a493cd1c217562574e",
+  "class_mapping_sha256": "d7fed729fb9e1fa08a8e020569c3c7da897569eb31f2dd5c5e1350ca558d0c04",
+  "seed": 42,
+  "max_epochs": 15,
+  "patience": 5,
+  "train_size": 3007,
+  "validation_size": 475,
+  "batch_size": 32,
+  "optimizer": "Adam",
+  "layer4_lr": 1e-05,
+  "head_lr": 0.0001,
+  "loss": "plain cross entropy",
+  "augmentation": "none; same deterministic train/validation transform as original baseline",
+  "trainable": "layer4 and fc",
+  "device": "cuda",
+  "amp": true,
+  "checkpoint_rule": "highest validation macro-F1; first epoch wins exact ties"
+}

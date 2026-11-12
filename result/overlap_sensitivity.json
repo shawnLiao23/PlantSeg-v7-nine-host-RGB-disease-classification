@@ -1,0 +1,26 @@
+{
+  "purpose": "Post-hoc sensitivity analysis only; no model selection or retraining",
+  "selected_model": "weighted_resnet18",
+  "definition": "Omit test images with an exact or visually confirmed same-photo match in training",
+  "official_split_unchanged": true,
+  "exact_test_train_overlap": 44,
+  "near_test_train_overlap": 63,
+  "overlap_union": 107,
+  "all_test": {
+    "count": 867,
+    "classes_with_support": 43,
+    "macro_f1": 0.6317438195915875,
+    "accuracy": 0.6689734717416378,
+    "balanced_accuracy": 0.6444200098599939
+  },
+  "without_detected_train_overlap": {
+    "count": 760,
+    "classes_with_support": 43,
+    "macro_f1": 0.6122220015054445,
+    "accuracy": 0.6526315789473685,
+    "balanced_accuracy": 0.6238404573526641
+  },
+  "remaining_limitation": "Undetected overlaps may remain; validation also has audited overlaps",
+  "predictions_sha256": "1103aae78cf815761bfe2024196e9658fe18caa0247935be44b67a8bd17aa15c",
+  "review_sha256": "a7752e4f46d4b6596ade089434068fc0f81acc2c6e9c49275b95dfbf089cb267"
+}

@@ -1,0 +1,5 @@
+experiment,best_epoch,val_macro_f1,val_accuracy,val_balanced_accuracy,train_time_sec,checkpoint,change
+majority_class,0,0.0030214246475004577,0.06947368421052631,0.023255813953488372,0.0,,training-set majority class
+baseline_resnet18,13,0.6246034943302331,0.671578947368421,0.6251289713958013,50.543126000000484,checkpoints/baseline_resnet18_best.pth,"frozen ResNet-18, plain cross-entropy"
+augmentation_resnet18,13,0.6162006771273042,0.6673684210526316,0.6083030851237706,762.6593267999997,checkpoints/augmentation_resnet18_best.pth,training augmentation only
+weighted_resnet18,13,0.627578011325076,0.671578947368421,0.6295721380482703,49.953339899999264,checkpoints/weighted_resnet18_best.pth,inverse-square-root class-weighted loss only

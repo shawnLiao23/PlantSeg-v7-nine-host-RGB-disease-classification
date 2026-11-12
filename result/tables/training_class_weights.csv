@@ -1,0 +1,44 @@
+class_id,class_name,training_count,weight
+0,apple | apple black rot,43,1.1489875316619873
+1,apple | apple mosaic virus,52,1.0448354482650757
+2,apple | apple rust,64,0.941801905632019
+3,apple | apple scab,115,0.7025878429412842
+4,banana | banana anthracnose,35,1.2735486030578613
+5,banana | banana black leaf streak,79,0.8476879596710205
+6,banana | banana bunchy top,56,1.0068285465240479
+7,banana | banana cigar end rot,22,1.6063427925109863
+8,banana | banana cordana leaf spot,19,1.728513479232788
+9,banana | banana panama disease,33,1.3115733861923218
+10,citrus | citrus canker,225,0.5022943615913391
+11,citrus | citrus greening disease,66,0.9274224042892456
+12,corn | corn gray leaf spot,49,1.0763450860977173
+13,corn | corn northern leaf blight,65,0.934529185295105
+14,corn | corn rust,84,0.8220720887184143
+15,corn | corn smut,91,0.7898213267326355
+16,potato | potato early blight,50,1.0655272006988525
+17,potato | potato late blight,53,1.0349315404891968
+18,soybean | soybean bacterial blight,41,1.176677942276001
+19,soybean | soybean brown spot,42,1.1625854969024658
+20,soybean | soybean downy mildew,56,1.0068285465240479
+21,soybean | soybean frog eye leaf spot,111,0.7151350378990173
+22,soybean | soybean mosaic,61,0.9646830558776855
+23,soybean | soybean rust,45,1.1231642961502075
+24,tomato | tomato bacterial leaf spot,64,0.941801905632019
+25,tomato | tomato early blight,103,0.7423880100250244
+26,tomato | tomato late blight,84,0.8220720887184143
+27,tomato | tomato leaf mold,71,0.8941705822944641
+28,tomato | tomato mosaic virus,29,1.3991057872772217
+29,tomato | tomato septoria leaf spot,66,0.9274224042892456
+30,tomato | tomato yellow leaf curl virus,43,1.1489875316619873
+31,wheat | wheat bacterial leaf streak (black chaff),53,1.0349315404891968
+32,wheat | wheat head scab,161,0.593795120716095
+33,wheat | wheat leaf rust,53,1.0349315404891968
+34,wheat | wheat loose smut,101,0.7497023344039917
+35,wheat | wheat powdery mildew,119,0.6906787157058716
+36,wheat | wheat septoria blotch,95,0.7730147242546082
+37,wheat | wheat stem rust,56,1.0068285465240479
+38,wheat | wheat stripe rust,160,0.5956478118896484
+39,zucchini | zucchini bacterial wilt,38,1.2222435474395752
+40,zucchini | zucchini downy mildew,25,1.5068830251693726
+41,zucchini | zucchini powdery mildew,90,0.794197142124176
+42,zucchini | zucchini yellow mosaic virus,39,1.2064720392227173

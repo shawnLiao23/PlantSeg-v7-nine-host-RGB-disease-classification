@@ -1,0 +1,14 @@
+{
+  "status": "post-final validation-only exploration; do not use for frozen final test",
+  "baseline_validation_macro_f1": 0.6246034943302331,
+  "best_epoch": 10,
+  "best_validation": {
+    "macro_f1": 0.663816203045368,
+    "accuracy": 0.7073684210526315,
+    "balanced_accuracy": 0.6670221557308462
+  },
+  "epochs_run": 10,
+  "training_time_sec": 594.3512358000003,
+  "checkpoint": "exploratory_finetune/best_validation.pth",
+  "test_evaluated": false
+}

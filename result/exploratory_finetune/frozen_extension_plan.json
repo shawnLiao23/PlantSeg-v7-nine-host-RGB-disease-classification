@@ -1,0 +1,15 @@
+{
+  "label": "supplementary post-final extension; prior test results were already visible",
+  "selection_rule": "highest validation macro-F1 across fine-tuning pilot and continuation",
+  "selected_checkpoint": "exploratory_finetune/best_validation.pth",
+  "checkpoint_sha256": "7850b5f61fc5d06bdacb55cb68039f3941288b402dd083c4f41eaad359f40e50",
+  "validation_macro_f1": 0.663816203045368,
+  "pilot_best_epoch": 10,
+  "continued_epochs_without_improvement": 5,
+  "original_frozen_plan_sha256": "2ea64ae9b10ec89e6ec029bd18c3ceb86b0706f54148ef0e6e95fd0a561e7872",
+  "manifest_sha256": "1ff6ddeb4bf02e573b4ebd6242daf195a86917b9316fa5a493cd1c217562574e",
+  "class_mapping_sha256": "d7fed729fb9e1fa08a8e020569c3c7da897569eb31f2dd5c5e1350ca558d0c04",
+  "validation_analysis_sha256": "3c388774f5ab88c569bd6eee073c08a451d9c06f52e454ca53ef7dff86d26cbd",
+  "prior_test_results_available": true,
+  "test_used_to_select_this_checkpoint": false
+}

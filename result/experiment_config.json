@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "batch_size": 32,
+  "epochs": 15,
+  "baseline_lr": 0.001,
+  "optimizer": "Adam",
+  "weights_identifier": "ResNet18_Weights.IMAGENET1K_V1",
+  "weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "image_size": 224,
+  "validation_transform": "Resize(256), CenterCrop(224), ToTensor, ImageNet V1 Normalize",
+  "augmentation": "RandomHorizontalFlip, RandomRotation(10), ColorJitter(0.1,0.1,0.1) on training images only",
+  "class_weight_formula": "clip((1/sqrt(training class count))/mean(1/sqrt(training class count)), 0.25, 4.0)",
+  "backbone": "frozen ResNet-18; cached deterministic features for basic and weighted experiments",
+  "device": "cuda",
+  "num_workers": 0,
+  "cublas_workspace_config": ":4096:8",
+  "split_policy": "Original supplied train/val/test partitions; all images retained",
+  "duplicate_exclusions": "None (duplicates audited and reported)"
+}

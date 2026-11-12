@@ -1,0 +1,307 @@
+{
+  "class_definition": "(host, disease)",
+  "class_count": 43,
+  "classes": [
+    {
+      "class_id": 0,
+      "class_name": "apple | apple black rot",
+      "host": "apple",
+      "disease": "apple black rot",
+      "source_index": 0
+    },
+    {
+      "class_id": 1,
+      "class_name": "apple | apple mosaic virus",
+      "host": "apple",
+      "disease": "apple mosaic virus",
+      "source_index": 1
+    },
+    {
+      "class_id": 2,
+      "class_name": "apple | apple rust",
+      "host": "apple",
+      "disease": "apple rust",
+      "source_index": 2
+    },
+    {
+      "class_id": 3,
+      "class_name": "apple | apple scab",
+      "host": "apple",
+      "disease": "apple scab",
+      "source_index": 3
+    },
+    {
+      "class_id": 4,
+      "class_name": "banana | banana anthracnose",
+      "host": "banana",
+      "disease": "banana anthracnose",
+      "source_index": 4
+    },
+    {
+      "class_id": 5,
+      "class_name": "banana | banana black leaf streak",
+      "host": "banana",
+      "disease": "banana black leaf streak",
+      "source_index": 5
+    },
+    {
+      "class_id": 6,
+      "class_name": "banana | banana bunchy top",
+      "host": "banana",
+      "disease": "banana bunchy top",
+      "source_index": 6
+    },
+    {
+      "class_id": 7,
+      "class_name": "banana | banana cigar end rot",
+      "host": "banana",
+      "disease": "banana cigar end rot",
+      "source_index": 7
+    },
+    {
+      "class_id": 8,
+      "class_name": "banana | banana cordana leaf spot",
+      "host": "banana",
+      "disease": "banana cordana leaf spot",
+      "source_index": 8
+    },
+    {
+      "class_id": 9,
+      "class_name": "banana | banana panama disease",
+      "host": "banana",
+      "disease": "banana panama disease",
+      "source_index": 9
+    },
+    {
+      "class_id": 10,
+      "class_name": "citrus | citrus canker",
+      "host": "citrus",
+      "disease": "citrus canker",
+      "source_index": 38
+    },
+    {
+      "class_id": 11,
+      "class_name": "citrus | citrus greening disease",
+      "host": "citrus",
+      "disease": "citrus greening disease",
+      "source_index": 39
+    },
+    {
+      "class_id": 12,
+      "class_name": "corn | corn gray leaf spot",
+      "host": "corn",
+      "disease": "corn gray leaf spot",
+      "source_index": 44
+    },
+    {
+      "class_id": 13,
+      "class_name": "corn | corn northern leaf blight",
+      "host": "corn",
+      "disease": "corn northern leaf blight",
+      "source_index": 45
+    },
+    {
+      "class_id": 14,
+      "class_name": "corn | corn rust",
+      "host": "corn",
+      "disease": "corn rust",
+      "source_index": 46
+    },
+    {
+      "class_id": 15,
+      "class_name": "corn | corn smut",
+      "host": "corn",
+      "disease": "corn smut",
+      "source_index": 47
+    },
+    {
+      "class_id": 16,
+      "class_name": "potato | potato early blight",
+      "host": "potato",
+      "disease": "potato early blight",
+      "source_index": 75
+    },
+    {
+      "class_id": 17,
+      "class_name": "potato | potato late blight",
+      "host": "potato",
+      "disease": "potato late blight",
+      "source_index": 76
+    },
+    {
+      "class_id": 18,
+      "class_name": "soybean | soybean bacterial blight",
+      "host": "soybean",
+      "disease": "soybean bacterial blight",
+      "source_index": 83
+    },
+    {
+      "class_id": 19,
+      "class_name": "soybean | soybean brown spot",
+      "host": "soybean",
+      "disease": "soybean brown spot",
+      "source_index": 84
+    },
+    {
+      "class_id": 20,
+      "class_name": "soybean | soybean downy mildew",
+      "host": "soybean",
+      "disease": "soybean downy mildew",
+      "source_index": 85
+    },
+    {
+      "class_id": 21,
+      "class_name": "soybean | soybean frog eye leaf spot",
+      "host": "soybean",
+      "disease": "soybean frog eye leaf spot",
+      "source_index": 86
+    },
+    {
+      "class_id": 22,
+      "class_name": "soybean | soybean mosaic",
+      "host": "soybean",
+      "disease": "soybean mosaic",
+      "source_index": 87
+    },
+    {
+      "class_id": 23,
+      "class_name": "soybean | soybean rust",
+      "host": "soybean",
+      "disease": "soybean rust",
+      "source_index": 88
+    },
+    {
+      "class_id": 24,
+      "class_name": "tomato | tomato bacterial leaf spot",
+      "host": "tomato",
+      "disease": "tomato bacterial leaf spot",
+      "source_index": 96
+    },
+    {
+      "class_id": 25,
+      "class_name": "tomato | tomato early blight",
+      "host": "tomato",
+      "disease": "tomato early blight",
+      "source_index": 97
+    },
+    {
+      "class_id": 26,
+      "class_name": "tomato | tomato late blight",
+      "host": "tomato",
+      "disease": "tomato late blight",
+      "source_index": 98
+    },
+    {
+      "class_id": 27,
+      "class_name": "tomato | tomato leaf mold",
+      "host": "tomato",
+      "disease": "tomato leaf mold",
+      "source_index": 99
+    },
+    {
+      "class_id": 28,
+      "class_name": "tomato | tomato mosaic virus",
+      "host": "tomato",
+      "disease": "tomato mosaic virus",
+      "source_index": 100
+    },
+    {
+      "class_id": 29,
+      "class_name": "tomato | tomato septoria leaf spot",
+      "host": "tomato",
+      "disease": "tomato septoria leaf spot",
+      "source_index": 101
+    },
+    {
+      "class_id": 30,
+      "class_name": "tomato | tomato yellow leaf curl virus",
+      "host": "tomato",
+      "disease": "tomato yellow leaf curl virus",
+      "source_index": 102
+    },
+    {
+      "class_id": 31,
+      "class_name": "wheat | wheat bacterial leaf streak (black chaff)",
+      "host": "wheat",
+      "disease": "wheat bacterial leaf streak (black chaff)",
+      "source_index": 103
+    },
+    {
+      "class_id": 32,
+      "class_name": "wheat | wheat head scab",
+      "host": "wheat",
+      "disease": "wheat head scab",
+      "source_index": 104
+    },
+    {
+      "class_id": 33,
+      "class_name": "wheat | wheat leaf rust",
+      "host": "wheat",
+      "disease": "wheat leaf rust",
+      "source_index": 105
+    },
+    {
+      "class_id": 34,
+      "class_name": "wheat | wheat loose smut",
+      "host": "wheat",
+      "disease": "wheat loose smut",
+      "source_index": 106
+    },
+    {
+      "class_id": 35,
+      "class_name": "wheat | wheat powdery mildew",
+      "host": "wheat",
+      "disease": "wheat powdery mildew",
+      "source_index": 107
+    },
+    {
+      "class_id": 36,
+      "class_name": "wheat | wheat septoria blotch",
+      "host": "wheat",
+      "disease": "wheat septoria blotch",
+      "source_index": 108
+    },
+    {
+      "class_id": 37,
+      "class_name": "wheat | wheat stem rust",
+      "host": "wheat",
+      "disease": "wheat stem rust",
+      "source_index": 109
+    },
+    {
+      "class_id": 38,
+      "class_name": "wheat | wheat stripe rust",
+      "host": "wheat",
+      "disease": "wheat stripe rust",
+      "source_index": 110
+    },
+    {
+      "class_id": 39,
+      "class_name": "zucchini | zucchini bacterial wilt",
+      "host": "zucchini",
+      "disease": "zucchini bacterial wilt",
+      "source_index": 111
+    },
+    {
+      "class_id": 40,
+      "class_name": "zucchini | zucchini downy mildew",
+      "host": "zucchini",
+      "disease": "zucchini downy mildew",
+      "source_index": 112
+    },
+    {
+      "class_id": 41,
+      "class_name": "zucchini | zucchini powdery mildew",
+      "host": "zucchini",
+      "disease": "zucchini powdery mildew",
+      "source_index": 113
+    },
+    {
+      "class_id": 42,
+      "class_name": "zucchini | zucchini yellow mosaic virus",
+      "host": "zucchini",
+      "disease": "zucchini yellow mosaic virus",
+      "source_index": 114
+    }
+  ]
+}

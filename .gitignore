@@ -1,0 +1,22 @@
+# Source dataset and local runtime
+/plantseg/
+/plantseg.zip
+/code/.venv/
+**/__pycache__/
+**/.ipynb_checkpoints/
+*.py[cod]
+
+# Model weights are generated locally and exceed what a source repository needs
+/result/checkpoints/
+/result/exploratory_finetune/*.pth
+/result/exploratory_finetune_continued/*.pth
+
+# Large audit contact sheets can be regenerated from the source dataset
+/result/figures/near_duplicate_review_*.png
+/result/figures/phash_review_*.png
+/result/report_preview/
+
+# Local coursework handout and temporary files
+/AIP304 CW2 Task Sheet.pdf
+*.tmp
+*.log

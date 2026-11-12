@@ -1,0 +1,44 @@
+class_id,class_name,host,disease,raw_train,used_train,raw_val,used_val,raw_test,used_test,raw_total,used_total
+0,apple | apple black rot,apple,apple black rot,43,43,8,8,12,12,63,63
+1,apple | apple mosaic virus,apple,apple mosaic virus,52,52,8,8,13,13,73,73
+2,apple | apple rust,apple,apple rust,64,64,12,12,22,22,98,98
+3,apple | apple scab,apple,apple scab,115,115,18,18,35,35,168,168
+4,banana | banana anthracnose,banana,banana anthracnose,35,35,6,6,9,9,50,50
+5,banana | banana black leaf streak,banana,banana black leaf streak,79,79,10,10,25,25,114,114
+6,banana | banana bunchy top,banana,banana bunchy top,56,56,9,9,13,13,78,78
+7,banana | banana cigar end rot,banana,banana cigar end rot,22,22,2,2,9,9,33,33
+8,banana | banana cordana leaf spot,banana,banana cordana leaf spot,19,19,3,3,8,8,30,30
+9,banana | banana panama disease,banana,banana panama disease,33,33,6,6,10,10,49,49
+10,citrus | citrus canker,citrus,citrus canker,225,225,33,33,65,65,323,323
+11,citrus | citrus greening disease,citrus,citrus greening disease,66,66,9,9,18,18,93,93
+12,corn | corn gray leaf spot,corn,corn gray leaf spot,49,49,10,10,17,17,76,76
+13,corn | corn northern leaf blight,corn,corn northern leaf blight,65,65,9,9,18,18,92,92
+14,corn | corn rust,corn,corn rust,84,84,13,13,23,23,120,120
+15,corn | corn smut,corn,corn smut,91,91,14,14,26,26,131,131
+16,potato | potato early blight,potato,potato early blight,50,50,9,9,9,9,68,68
+17,potato | potato late blight,potato,potato late blight,53,53,7,7,18,18,78,78
+18,soybean | soybean bacterial blight,soybean,soybean bacterial blight,41,41,6,6,14,14,61,61
+19,soybean | soybean brown spot,soybean,soybean brown spot,42,42,3,3,10,10,55,55
+20,soybean | soybean downy mildew,soybean,soybean downy mildew,56,56,6,6,14,14,76,76
+21,soybean | soybean frog eye leaf spot,soybean,soybean frog eye leaf spot,111,111,13,13,29,29,153,153
+22,soybean | soybean mosaic,soybean,soybean mosaic,61,61,11,11,17,17,89,89
+23,soybean | soybean rust,soybean,soybean rust,45,45,7,7,14,14,66,66
+24,tomato | tomato bacterial leaf spot,tomato,tomato bacterial leaf spot,64,64,9,9,17,17,90,90
+25,tomato | tomato early blight,tomato,tomato early blight,103,103,16,16,34,34,153,153
+26,tomato | tomato late blight,tomato,tomato late blight,84,84,14,14,19,19,117,117
+27,tomato | tomato leaf mold,tomato,tomato leaf mold,71,71,13,13,18,18,102,102
+28,tomato | tomato mosaic virus,tomato,tomato mosaic virus,29,29,5,5,9,9,43,43
+29,tomato | tomato septoria leaf spot,tomato,tomato septoria leaf spot,66,66,13,13,20,20,99,99
+30,tomato | tomato yellow leaf curl virus,tomato,tomato yellow leaf curl virus,43,43,4,4,16,16,63,63
+31,wheat | wheat bacterial leaf streak (black chaff),wheat,wheat bacterial leaf streak (black chaff),53,53,11,11,19,19,83,83
+32,wheat | wheat head scab,wheat,wheat head scab,161,161,25,25,44,44,230,230
+33,wheat | wheat leaf rust,wheat,wheat leaf rust,53,53,7,7,15,15,75,75
+34,wheat | wheat loose smut,wheat,wheat loose smut,101,101,15,15,25,25,141,141
+35,wheat | wheat powdery mildew,wheat,wheat powdery mildew,119,119,24,24,35,35,178,178
+36,wheat | wheat septoria blotch,wheat,wheat septoria blotch,95,95,19,19,28,28,142,142
+37,wheat | wheat stem rust,wheat,wheat stem rust,56,56,11,11,22,22,89,89
+38,wheat | wheat stripe rust,wheat,wheat stripe rust,160,160,25,25,43,43,228,228
+39,zucchini | zucchini bacterial wilt,zucchini,zucchini bacterial wilt,38,38,7,7,12,12,57,57
+40,zucchini | zucchini downy mildew,zucchini,zucchini downy mildew,25,25,3,3,5,5,33,33
+41,zucchini | zucchini powdery mildew,zucchini,zucchini powdery mildew,90,90,16,16,27,27,133,133
+42,zucchini | zucchini yellow mosaic virus,zucchini,zucchini yellow mosaic virus,39,39,6,6,11,11,56,56

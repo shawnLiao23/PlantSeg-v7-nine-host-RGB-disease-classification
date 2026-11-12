@@ -1,0 +1,60 @@
+{
+  "status": "interpretive sensitivity analysis; original selection unchanged",
+  "exact_validation_train_overlap": 22,
+  "near_validation_train_overlap": 39,
+  "overlap_union": 61,
+  "all_validation_count": 475,
+  "without_overlap_count": 414,
+  "experiments": {
+    "baseline_resnet18": {
+      "all_validation": {
+        "macro_f1": 0.6246034943302331,
+        "accuracy": 0.671578947368421,
+        "balanced_accuracy": 0.6251289713958013
+      },
+      "without_detected_train_overlap": {
+        "macro_f1": 0.6060809535868047,
+        "accuracy": 0.6545893719806763,
+        "balanced_accuracy": 0.6048321833205554
+      }
+    },
+    "augmentation_resnet18": {
+      "all_validation": {
+        "macro_f1": 0.6162006771273042,
+        "accuracy": 0.6673684210526316,
+        "balanced_accuracy": 0.6083030851237706
+      },
+      "without_detected_train_overlap": {
+        "macro_f1": 0.5963987766601995,
+        "accuracy": 0.6473429951690821,
+        "balanced_accuracy": 0.5886524973734276
+      }
+    },
+    "weighted_resnet18": {
+      "all_validation": {
+        "macro_f1": 0.627578011325076,
+        "accuracy": 0.671578947368421,
+        "balanced_accuracy": 0.6295721380482703
+      },
+      "without_detected_train_overlap": {
+        "macro_f1": 0.6092335831828599,
+        "accuracy": 0.6545893719806763,
+        "balanced_accuracy": 0.6096799840985888
+      }
+    },
+    "finetune_layer4_postfinal": {
+      "all_validation": {
+        "macro_f1": 0.663816203045368,
+        "accuracy": 0.7073684210526315,
+        "balanced_accuracy": 0.6670221557308462
+      },
+      "without_detected_train_overlap": {
+        "macro_f1": 0.6400623961055921,
+        "accuracy": 0.6859903381642513,
+        "balanced_accuracy": 0.6403647386205527
+      }
+    }
+  },
+  "predictions_sha256": "f571d8eb241930454b89b09c45c185b0020e22ee3a7d4db6e8b4deb4ca6f90e3",
+  "test_evaluated": false
+}

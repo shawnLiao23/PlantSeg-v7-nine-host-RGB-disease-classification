@@ -1,0 +1,3 @@
+image_a,split_a,class_a,image_b,split_b,class_b,cosine_similarity,dhash_distance
+wheat_stripe_rust_Google_0010.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Bing_0094.jpg,val,wheat | wheat stripe rust,0.9887752532958984,6
+wheat_stripe_rust_Bing_0162.jpg,train,wheat | wheat stripe rust,wheat_stripe_rust_Google_0148.jpg,test,wheat | wheat stripe rust,0.9877719879150391,7
