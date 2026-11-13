@@ -39,16 +39,23 @@ def freeze(output: Path) -> dict:
     summary = json.loads(summary_path.read_text(encoding="utf-8"))
     continued_path = output / "exploratory_finetune_continued" / "summary.json"
     continued = json.loads(continued_path.read_text(encoding="utf-8"))
-    if continued["best_validation"]["macro_f1"] != summary["best_validation"]["macro_f1"]:
-        raise ValueError("Continuation has a different best validation score")
-    if continued["best_available_checkpoint"] != summary["checkpoint"]:
-        raise ValueError("Continuation best differs from pilot best checkpoint")
-    checkpoint = output / summary["checkpoint"]
+    pilot_checkpoint = summary.get("checkpoint")
+    if not pilot_checkpoint:
+        raise ValueError("Pilot has no improved checkpoint to freeze")
+    selected_checkpoint = continued["best_available_checkpoint"]
+    if selected_checkpoint not in (pilot_checkpoint, continued.get("checkpoint")):
+        raise ValueError("Continuation selected an unknown checkpoint")
+    selected_scores = continued["best_validation"]
+    if selected_scores["macro_f1"] < summary["best_validation"]["macro_f1"]:
+        raise ValueError("Continuation best is worse than the pilot best")
+    selected_epoch = (summary["best_epoch"] if selected_checkpoint == pilot_checkpoint
+                      else continued["best_epoch"])
+    checkpoint = output / selected_checkpoint
     payload = torch.load(checkpoint, map_location="cpu", weights_only=True)
     mapping = json.loads((output / "class_mapping.json").read_text(encoding="utf-8"))
     if (payload["class_mapping"] != mapping or payload["weights_identifier"] != WEIGHTS_ID
-            or payload["best_epoch"] != summary["best_epoch"]
-            or abs(payload["validation_macro_f1"] - summary["best_validation"]["macro_f1"]) > 1e-10):
+            or payload["best_epoch"] != selected_epoch
+            or abs(payload["validation_macro_f1"] - selected_scores["macro_f1"]) > 1e-10):
         raise ValueError("Checkpoint does not match validation-selected extension")
     for field, filename in (("manifest_sha256", "manifest.csv"),
                             ("class_mapping_sha256", "class_mapping.json"),
@@ -57,15 +64,17 @@ def freeze(output: Path) -> dict:
             raise ValueError(f"Original frozen input changed: {filename}")
     validation = json.loads((output / "validation_overlap_analysis.json").read_text(encoding="utf-8"))
     if abs(validation["experiments"]["finetune_layer4_postfinal"]["all_validation"]["macro_f1"]
-           - summary["best_validation"]["macro_f1"]) > 1e-10:
+           - selected_scores["macro_f1"]) > 1e-10:
         raise ValueError("Independent validation prediction check differs")
     plan = {
         "label": "supplementary post-final extension; prior test results were already visible",
         "selection_rule": "highest validation macro-F1 across fine-tuning pilot and continuation",
-        "selected_checkpoint": summary["checkpoint"],
+        "selected_checkpoint": selected_checkpoint,
         "checkpoint_sha256": sha(checkpoint),
-        "validation_macro_f1": summary["best_validation"]["macro_f1"],
+        "validation_macro_f1": selected_scores["macro_f1"],
         "pilot_best_epoch": summary["best_epoch"],
+        "selected_stage": "pilot" if selected_checkpoint == pilot_checkpoint else "continuation",
+        "selected_epoch": selected_epoch,
         "continued_epochs_without_improvement": continued["epochs_run"],
         "original_frozen_plan_sha256": sha(output / "frozen_plan.json"),
         "manifest_sha256": original["manifest_sha256"],
@@ -75,7 +84,7 @@ def freeze(output: Path) -> dict:
         "test_used_to_select_this_checkpoint": False,
     }
     plan_path.write_text(json.dumps(plan, indent=2) + "\n", encoding="utf-8")
-    print(f"Frozen supplementary extension: {summary['checkpoint']} at validation macro-F1 "
+    print(f"Frozen supplementary extension: {selected_checkpoint} at validation macro-F1 "
           f"{plan['validation_macro_f1']:.4f}")
     return plan
 

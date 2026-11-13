@@ -47,6 +47,9 @@ def plot_extension(output: Path, summary: dict) -> None:
     pilot = read_csv(folder / "validation_history.csv")
     continued = read_csv(output / "exploratory_finetune_continued" / "validation_history.csv")
     history = pilot + continued
+    plan = json.loads((folder / "frozen_extension_plan.json").read_text(encoding="utf-8"))
+    selected_x = (pilot_summary["best_epoch"] if plan.get("selected_stage", "pilot") == "pilot"
+                  else len(pilot) + plan["selected_epoch"])
     epochs = np.arange(1, len(history) + 1)
     fig, axes = plt.subplots(1, 2, figsize=(11, 3.7))
     axes[0].plot(epochs, [float(r["train_loss"]) for r in history], marker="o", ms=3,
@@ -59,8 +62,7 @@ def plot_extension(output: Path, summary: dict) -> None:
                  color="#157a75", label="Fine-tuning")
     axes[1].axhline(weighted_validation, ls="--", color="#536475", lw=1,
                     label="Original class weighting")
-    axes[1].scatter([pilot_summary["best_epoch"]],
-                    [pilot_summary["best_validation"]["macro_f1"]], color="#bd4c35", zorder=5,
+    axes[1].scatter([selected_x], [plan["validation_macro_f1"]], color="#bd4c35", zorder=5,
                     label="Selected checkpoint")
     axes[1].set(ylabel="Macro-F1", xlabel="Epoch", title="Validation selection")
     axes[1].legend(frameon=False, fontsize=8)
@@ -101,6 +103,7 @@ def main(output_dir: Path | None = None, bootstrap_replicates: int = 3000) -> di
     plan_path = folder / "frozen_extension_plan.json"
     if extension["frozen_extension_plan_sha256"] != sha(plan_path):
         raise ValueError("Supplementary test is detached from its frozen plan")
+    plan = json.loads(plan_path.read_text(encoding="utf-8"))
     original_path = output / "tables" / "test_predictions.csv"
     extension_path = folder / "supplementary_test_predictions.csv"
     if extension["predictions_sha256"] != sha(extension_path):
@@ -162,7 +165,8 @@ def main(output_dir: Path | None = None, bootstrap_replicates: int = 3000) -> di
         "test_split_unchanged": True,
         "sample_count": len(true),
         "original_model": original["selected_model"],
-        "finetune_model": "layer4 plus head, epoch 10 checkpoint",
+        "finetune_model": (f"layer4 plus head, {plan.get('selected_stage', 'pilot')} "
+                           f"epoch {plan.get('selected_epoch', plan['pilot_best_epoch'])} checkpoint"),
         "metrics": {
             name: {
                 "original": original_metrics[name],

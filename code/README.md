@@ -58,6 +58,8 @@ After the original final test had already been run, a separate experiment fine-t
 
 The checkpoint was frozen in `result/exploratory_finetune/frozen_extension_plan.json` before one supplementary test evaluation on all 867 original test images. It achieved macro-F1 **0.6629**, accuracy **0.7093**, and balanced accuracy **0.6568**; the original selected model achieved **0.6317**, **0.6690**, and **0.6444**. Per-class differences and paired predictions are in `result/exploratory_finetune/`. This extension is labelled **post-final** because the original test results were already visible when it was designed; it must not be described as a fully blind final test or used to justify further tuning.
 
+Fresh notebook runs let the pilot complete up to 10 epochs before deciding whether to continue. If no epoch beats its starting validation macro-F1, the notebook records that outcome and skips the supplementary freeze and test. If continuation improves further, its validation-selected checkpoint is frozen instead of the pilot checkpoint. Results from a fresh run may differ from the archived results above.
+
 The reproducible supplementary commands, run after the original experiment, are:
 
 ```powershell
