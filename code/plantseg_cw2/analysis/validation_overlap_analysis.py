@@ -17,7 +17,7 @@ from torchvision.models import resnet18
 
 from ..dataset import dataset_root, load_manifest, result_root
 from ..evaluate import predict_model, scores
-from ..train import WEIGHTS_ID, device
+from ..train import BATCH_SIZE, WEIGHTS_ID, device
 
 
 def read_rows(path: Path) -> list[dict]:
@@ -44,6 +44,8 @@ def main(output_dir: Path | None = None) -> dict:
     mapping = json.loads((output / "class_mapping.json").read_text(encoding="utf-8"))
     manifest = load_manifest(output / "manifest.csv")
     val_rows = [row for row in manifest if row["split"] == "val"]
+    if len({row["image_id"] for row in val_rows}) != len(val_rows):
+        raise ValueError("Validation manifest contains duplicate image_id values")
     exact = set()
     for group in audit["exact_duplicate_groups"]:
         members = group["members"]
@@ -71,12 +73,15 @@ def main(output_dir: Path | None = None) -> dict:
         if latest.get("best_available_checkpoint"):
             checkpoint = latest["best_available_checkpoint"]
             expected = latest["best_validation"]["macro_f1"]
+            best_epoch = (pilot["best_epoch"] if checkpoint == pilot["checkpoint"]
+                          else latest["best_epoch"])
         else:
             checkpoint = pilot["checkpoint"]
             expected = pilot["best_validation"]["macro_f1"]
+            best_epoch = pilot["best_epoch"]
         summary_rows.append({"experiment": "finetune_layer4_postfinal",
                              "checkpoint": checkpoint,
-                             "best_epoch": str(pilot["best_epoch"]),
+                             "best_epoch": str(best_epoch),
                              "val_macro_f1": expected})
     target = device()
     prediction_rows = {row["image_id"]: {
@@ -90,16 +95,26 @@ def main(output_dir: Path | None = None) -> dict:
             continue
         payload = torch.load(output / entry["checkpoint"], map_location="cpu", weights_only=True)
         if (payload["class_mapping"] != mapping or payload["weights_identifier"] != WEIGHTS_ID
+                or payload["best_epoch"] != int(entry["best_epoch"])
                 or abs(float(entry["val_macro_f1"]) - payload["validation_macro_f1"]) > 1e-10):
             raise ValueError(f"Frozen checkpoint does not match: {name}")
         model = resnet18(weights=None)
         model.fc = torch.nn.Linear(512, mapping["class_count"])
         model.load_state_dict(payload["model_state_dict"])
         model.to(target).eval()
+        protocol = "full_amp" if name == "finetune_layer4_postfinal" else "cached_features"
         full, predictions = predict_model(model, "val", manifest, dataset_root(),
-                                          mapping["class_count"], target)
+                                          mapping["class_count"], target,
+                                          batch_size=BATCH_SIZE, protocol=protocol)
         if abs(full["macro_f1"] - float(entry["val_macro_f1"])) > 1e-6:
-            raise ValueError(f"Recomputed validation result differs from frozen summary: {name}")
+            raise ValueError(
+                f"Recomputed validation result differs from frozen summary: {name}; "
+                f"saved={entry['val_macro_f1']}, observed={full['macro_f1']}, "
+                f"checkpoint_sha256={sha(output / entry['checkpoint'])}, "
+                f"protocol={protocol}, batch_size={BATCH_SIZE}. "
+                "Run python -m plantseg_cw2.analysis.diagnose_validation_consistency "
+                "before continuing."
+            )
         for row in predictions:
             prediction_rows[row["image_id"]][name] = row["pred_class"]
         clean_predictions = [row for row in predictions if row["image_id"] not in overlap]

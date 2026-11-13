@@ -18,7 +18,7 @@ from torchvision.models import resnet18
 from ..dataset import dataset_root, load_manifest, result_root
 from ..evaluate import predict_model, scores, write_rows
 from .sensitivity_analysis import read_csv
-from ..train import WEIGHTS_ID, device
+from ..train import BATCH_SIZE, WEIGHTS_ID, device
 
 
 def sha(path: Path) -> str:
@@ -80,6 +80,8 @@ def freeze(output: Path) -> dict:
         "manifest_sha256": original["manifest_sha256"],
         "class_mapping_sha256": original["class_mapping_sha256"],
         "validation_analysis_sha256": sha(output / "validation_overlap_analysis.json"),
+        "prediction_protocol": "full_amp",
+        "prediction_batch_size": BATCH_SIZE,
         "prior_test_results_available": (output / "final_test_metrics.json").exists(),
         "test_used_to_select_this_checkpoint": False,
     }
@@ -111,7 +113,9 @@ def evaluate(output: Path) -> dict:
     target = device()
     model.to(target).eval()
     full, predictions = predict_model(model, "test", load_manifest(output / "manifest.csv"),
-                                      dataset_root(), mapping["class_count"], target)
+                                      dataset_root(), mapping["class_count"], target,
+                                      protocol=plan.get("prediction_protocol", "feature_fp32"),
+                                      batch_size=plan.get("prediction_batch_size", 64))
     if len(predictions) != 867:
         raise ValueError("Expected all 867 official test images")
     prediction_path = folder / "supplementary_test_predictions.csv"

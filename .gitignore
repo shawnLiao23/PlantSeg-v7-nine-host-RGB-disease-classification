@@ -21,6 +21,7 @@
 /result/figures/near_duplicate_review_*.png
 /result/figures/phash_review_*.png
 /result/report_preview/
+/result/diagnostics/
 
 # Local coursework handout and temporary files
 /AIP304 CW2 Task Sheet.pdf

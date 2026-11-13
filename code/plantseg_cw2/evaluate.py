@@ -58,24 +58,63 @@ def majority_prediction(manifest: list[dict], split: str, class_count: int):
 
 
 def predict_model(model, split: str, manifest: list[dict], data_dir: Path, class_count: int,
-                  device: torch.device, batch_size: int = 64) -> tuple[dict, list[dict]]:
+                  device: torch.device, batch_size: int = 64,
+                  protocol: str = "feature_fp32", include_margin: bool = False) -> tuple[dict, list[dict]]:
+    """Predict in a named, reproducible forward protocol.
+
+    ``cached_features`` reproduces the original frozen-head validation: an
+    Identity head in ResNet, AMP feature extraction, then one FP32 head call.
+    ``full_amp`` reproduces the layer4 fine-tuning validation. The default
+    retains the original independent evaluation protocol for archived tests.
+    """
+    if protocol not in {"feature_fp32", "cached_features", "full_amp"}:
+        raise ValueError(f"Unknown prediction protocol: {protocol}")
     ds = PlantDiseaseDataset(manifest, data_dir, split, make_transforms(False))
-    loader = DataLoader(ds, batch_size=batch_size, shuffle=False, num_workers=0,
-                        pin_memory=device.type == "cuda")
-    y_true, y_pred, confidence = [], [], []
+    y_true, y_pred, confidence, margins = [], [], [], []
     model.eval()
-    feature_model = torch.nn.Sequential(*list(model.children())[:-1]).eval()
-    with torch.inference_mode():
-        for images, labels in loader:
-            images = images.to(device, non_blocking=True)
-            with torch.autocast(device_type="cuda", enabled=device.type == "cuda"):
-                features = feature_model(images)
-            logits = model.fc(features.flatten(1).float())
-            probabilities = torch.softmax(logits.float(), dim=1)
-            conf, prediction = probabilities.max(dim=1)
-            y_true.extend(labels.numpy().tolist())
-            y_pred.extend(prediction.cpu().numpy().tolist())
-            confidence.extend(conf.cpu().numpy().tolist())
+    if protocol == "cached_features":
+        # Use the training function itself, including its ResNet forward and
+        # feature concatenation. Restore the checkpoint head even on failure.
+        from .train import extract_features
+        head = model.fc
+        model.fc = torch.nn.Identity()
+        try:
+            features, labels = extract_features(model, ds, device, batch_size)
+        finally:
+            model.fc = head
+        with torch.inference_mode():
+            logits = head(features.float())
+        batches = [(logits, labels)]
+    else:
+        loader = DataLoader(ds, batch_size=batch_size, shuffle=False, num_workers=0,
+                            pin_memory=device.type == "cuda")
+        feature_model = torch.nn.Sequential(*list(model.children())[:-1]).eval()
+
+        def forward_batches():
+            with torch.inference_mode():
+                for images, labels in loader:
+                    images = images.to(device, non_blocking=True)
+                    with torch.autocast(device_type="cuda", enabled=device.type == "cuda"):
+                        if protocol == "full_amp":
+                            logits = model(images)
+                        else:
+                            features = feature_model(images)
+                    if protocol == "feature_fp32":
+                        logits = model.fc(features.flatten(1).float())
+                    yield logits, labels
+
+        batches = forward_batches()
+    for logits, labels in batches:
+        probabilities = torch.softmax(logits.float(), dim=1)
+        conf, prediction = probabilities.max(dim=1)
+        y_true.extend(labels.cpu().tolist())
+        y_pred.extend(prediction.cpu().tolist())
+        confidence.extend(conf.cpu().tolist())
+        if include_margin:
+            top_two = logits.float().topk(2, dim=1).values
+            margins.extend((top_two[:, 0] - top_two[:, 1]).cpu().tolist())
+    if len(y_pred) != len(ds.rows):
+        raise ValueError(f"Prediction count differs from manifest for {split}")
     result = scores(y_true, y_pred, class_count)
     predictions = [
         {"image_id": row["image_id"], "image_path": row["image_path"],
@@ -83,6 +122,9 @@ def predict_model(model, split: str, manifest: list[dict], data_dir: Path, class
          "confidence": float(conf)}
         for row, pred, conf in zip(ds.rows, y_pred, confidence)
     ]
+    if include_margin:
+        for row, margin in zip(predictions, margins):
+            row["top2_logit_margin"] = float(margin)
     return result, predictions
 
 

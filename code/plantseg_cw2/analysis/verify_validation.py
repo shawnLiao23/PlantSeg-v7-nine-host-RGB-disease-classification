@@ -8,7 +8,7 @@ import json
 from ..dataset import dataset_root, load_manifest, result_root
 from ..evaluate import predict_model
 from ..run_experiments import _load_model
-from ..train import device
+from ..train import BATCH_SIZE, device
 
 
 def main() -> None:
@@ -23,7 +23,8 @@ def main() -> None:
             continue
         model = _load_model(output / row["checkpoint"], mapping, row, target_device)
         observed, _ = predict_model(model, "val", manifest, dataset_root(),
-                                    len(mapping["classes"]), target_device)
+                                    len(mapping["classes"]), target_device,
+                                    batch_size=BATCH_SIZE, protocol="cached_features")
         for key, column in (("macro_f1", "val_macro_f1"),
                             ("accuracy", "val_accuracy"),
                             ("balanced_accuracy", "val_balanced_accuracy")):
