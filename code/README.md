@@ -1,6 +1,8 @@
 # AIP304 Coursework 2 - Option 1
 
-This project classifies RGB photographs into host-disease classes for the nine specified PlantSeg hosts. The notebook is `AIP304_CW2_Option1.ipynb`; the installable `plantseg_cw2` package holds the audit, training, evaluation, plotting, and inference code used by the notebook. The `analysis` subpackage contains supplementary experiments and diagnostics.
+This project classifies RGB photographs into host-disease classes for the nine specified PlantSeg hosts. Use `AIP304_CW2_Option1.ipynb` locally and `AIP304_CW2_Option1_Kaggle.ipynb` in Kaggle. Each notebook embeds the project modules and the reviewed duplicate-photo CSV, so the notebook is the only code file to import. The installable `plantseg_cw2` package holds the audit, training, evaluation, plotting, and inference code used by both notebooks. The `analysis` subpackage contains supplementary experiments and diagnostics.
+
+For Kaggle, attach the complete PlantSeg dataset as an Input, enable a GPU and Internet, then import `AIP304_CW2_Option1_Kaggle.ipynb` and run its cells in order. It searches `/kaggle/input` for `Metadata.csv` beside the dataset's `images/` and `annotations/` folders, including mounts nested under an owner name. It keeps the source read-only and writes results to `/kaggle/working/result`. When the original ZIP is unavailable because Kaggle exposes only extracted files, the notebook checks the metadata and SHA-256 of every one of the 4,349 task images against the locally verified v7 copy; it does not claim that all unused archive files were checked. The ImageNet ResNet-18 weight downloads when missing, or can be attached separately as an Input for offline execution.
 
 ## Dataset and paths
 
@@ -91,7 +93,7 @@ result/AIP304_CW2_Report.pdf        concise report, at most five pages
 
 The notebook regenerates the report's data-derived tables and figures from these files. Large inline image outputs are removed from the saved notebook; the figures remain in `result/figures/` and are displayed when its cells run. The PDF is built by `plantseg_cw2.build_report`, which refuses to create a report without the recorded manifest, audit, validation summary, and final test metrics. Fill in student names, identifiers, and actual team contributions before submission. The recording guide is `docs/video_script.md`; a real video with the presenter visible is still required.
 
-The repository contains saved result tables but omits raw data and model checkpoints. A fresh clone can inspect the saved outputs. To execute inference, use locally regenerated checkpoints. To rerun the full experiment without overwriting the archived results, set `CW2_RESULT_DIR` to a new directory such as `result_local` and place a copy of `result/tables/near_duplicate_review.csv` at `result_local/tables/near_duplicate_review.csv` before auditing. This preserves the documented visual review decisions.
+The repository contains saved result tables but omits raw data and model checkpoints. A fresh clone can inspect the saved outputs. To execute inference, use locally regenerated checkpoints. To rerun the full experiment without overwriting the archived results, use `MODE = "full"` in the local notebook; it writes to `result_local` and restores the reviewed duplicate-photo CSV automatically. For command-line reruns, set `CW2_RESULT_DIR` to a new directory and copy `result/tables/near_duplicate_review.csv` to its `tables/` folder before auditing.
 
 ## Sources
 
